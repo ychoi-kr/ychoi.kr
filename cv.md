@@ -18,8 +18,16 @@
 
 ## 프로젝트
 
+### 앱
+
 {% for app in site.data.apps %}
 - [{{ app.name }}]({% if app.intro_link %}{{ app.intro_link }}{% else %}{{ app.link }}{% endif %}){% if app.github %} ([GitHub]({{ app.github }})){% endif %}: {{ app.description }}
+{% endfor %}
+
+### GPT
+
+{% for gpt in site.data.gpts %}
+- [{{ gpt.name }}]({{ gpt.link }}){% if gpt.intro_link %} ([소개]({{ gpt.intro_link }})){% endif %}: {{ gpt.description }}
 {% endfor %}
 
 ## 저서
