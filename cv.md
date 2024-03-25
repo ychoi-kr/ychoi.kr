@@ -21,7 +21,7 @@
 ### 앱
 
 {% for app in site.data.apps %}
-- [{{ app.name }}]({% if app.intro_link %}{{ app.intro_link }}{% else %}{{ app.link }}{% endif %}){% if app.github %} ([GitHub]({{ app.github }})){% endif %}: {{ app.description }}
+- [{{ app.name }}]({% if app.intro_link %}{{ app.intro_link }}{% else %}{{ app.link }}{% endif %}){% if app.github %} ([GitHub]({{ app.github }})){% endif %}: {{ app.description }} (기술 스택: {{ app.tech | join: ', ' }})
 {% endfor %}
 
 ### GPT
