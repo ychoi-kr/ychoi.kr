@@ -1,0 +1,11 @@
+- name: equation
+  description: Equation Share는 LaTeX 문법을 사용하여 수학 수식을 쉽게 공유할 수 있는 웹 앱으로, 공유 가능한 링크를 생성합니다.
+  link: https://equation.pythonanywhere.com/
+
+- name: docxmath
+  description: 워드(.docx) 파일에 있는 수식의 목록을 보여주는 플라스크 앱입니다.
+  link: https://docxmath.pythonanywhere.com/
+
+- name: Read it! OCR
+  description: 이미지에서 텍스트를 추출하는 스트림릿 앱입니다.
+  link: https://readit.streamlit.app/
