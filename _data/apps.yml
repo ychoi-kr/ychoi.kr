@@ -1,26 +1,38 @@
-- name: equation
-  description: Equation Share는 LaTeX 문법을 사용하여 수학 수식을 쉽게 공유할 수 있는 웹 앱으로, 공유 가능한 링크를 생성합니다.
-  link: https://equation.pythonanywhere.com/
-
-- name: docxmath
-  description: 워드(.docx) 파일에 있는 수식의 목록을 보여주는 플라스크 앱입니다.
-  link: https://docxmath.pythonanywhere.com/
-
 - name: Read it! OCR
   description: 이미지에서 텍스트를 추출하는 스트림릿 앱입니다.
   link: https://readit.streamlit.app/
   github: https://github.com/ychoi-kr/readit
-
-- name: Book Creator Guide
-  description: 책을 만드는 과정을 돕는 GPT입니다. 2024년 10주차 top picks에 선정되었습니다.
-  link: https://chat.openai.com/g/g-7C0wg9CMN-book-creator-guide
-  intro_link: https://wikidocs.net/220905
-
-- name: ko-prfrdr
-  description: 한국어 문장을 교정하는 명령행 프로그램입니다. 규칙 기반으로 작동합니다.
+  tech: [Python, Streamlit, EasyOCR]
 
 - name: askwikibook
   description: 위키북스 도서 정보를 찾아주는 챗봇입니다.
   link: https://askwikibook.pythonanywhere.com/
   intro_link: https://wikidocs.net/219244
   github: https://github.com/ychoi-kr/askwikibook/
+  tech: [Python, Flask, OpenAI API]
+  
+- name: equation
+  description: Equation Share는 LaTeX 문법을 사용하여 수학 수식을 쉽게 공유할 수 있는 웹 앱으로, 공유 가능한 링크를 생성합니다.
+  link: https://equation.pythonanywhere.com/
+  tech: [Python, Flask]
+
+- name: docxmath
+  description: 워드(.docx) 파일에 있는 수식의 목록을 보여주는 플라스크 앱입니다.
+  link: https://docxmath.pythonanywhere.com/
+  tech: [Python, Flask]
+
+- name: 글첵(GuelCheck)
+  description: 글쓰기 전문가(작가, 기자, 교정/교열 담당자 등)를 위한 맞춤법/문장 검사 웹 애플리케이션입니다. 규칙 기반으로 작동합니다.
+  link: https://geulcheck.pythonanywhere.com/
+  intro_link: https://wikidocs.net/186245
+  tech: [Python, Flask]
+
+- name: ko-editor
+  description: 교정/교열 업무 능률을 높이는 명령행 도구 모음입니다.
+  intro_link: http://wikidocs.net/228454
+  tech: [Python]
+
+- name: ko-prfrdr
+  description: 한국어 문장을 교정하는 명령행 프로그램입니다. 규칙 기반으로 작동합니다.
+  intro_link: https://wikidocs.net/186245
+  tech: [Python]
