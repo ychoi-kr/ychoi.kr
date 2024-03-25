@@ -1,2 +1,3 @@
-- [books](/books)
-- [log](/log)
+- [저서/역서](/books)
+- [앱](/apps)
+- [일기](/log)
