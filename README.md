@@ -1,1 +1,0 @@
-# ychoi.kr
