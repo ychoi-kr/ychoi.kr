@@ -21,12 +21,13 @@
 - [ko-prfrdr](https://github.com/ychoi-kr/ko-prfrdr): 한국어 문장 교정(규칙 기반)
 
 ## 저서
-- Hello IT 파이썬을 제대로 활용해보려고 해, 패스트캠퍼스, 2022년
-- 예제 중심의 Python 3, 인피니티북스, 2014년
-- 예제 중심의 Python 파이썬, 인피니티북스, 2011년
-- 왕초보를 위한 Python 파이썬 (Ver 2.2), 사이버출판사, 2002년
+
+{% for book in site.data.authored_books %}
+  - {% if book.link %}[{{ book.title }}]({{ book.link }}){% else %}{{ book.title }}{% endif %}, {{ book.publisher }}, {{ book.date }}
+{% endfor %}
 
 ## 역서
-- [랭체인 완벽 입문](/books/langchain), 위키북스, 2024년
-- 실전! 컴퓨터비전을 위한 머신러닝, 위키북스, 2024년
-- [그 외 다수](/books)
+
+{% for book in site.data.translated_books %}
+  - {% if book.link %}[{{ book.title }}]({{ book.link }}){% else %}{{ book.title }}{% endif %}, {{ book.authors }}, {{ book.publisher }}, {{ book.date }}
+{% endfor %}
