@@ -1,3 +1,18 @@
+- name: DeepL API Free Plug-in for OmegaT
+  description: OmegaT에서 DeepL 무료 API를 사용할 수 있게 하는 플러그인입니다.
+  github: https://github.com/ychoi-kr/omegat-plugin-deepl-api-free
+  tech: [Java]
+
+- name: Solar Mini Translate Plug-in for OmegaT
+  description: OmegaT에서 Solar Mini Translate API를 사용할 수 있게 하는 플러그인입니다.
+  github: https://github.com/ychoi-kr/omegat-plugin-solar-mini-translate
+  tech: [Java]
+
+- name: OpenAI plug-in for OmegaT
+  description: OmegaT에서 OpenAI API를 사용해 기계 번역을 할 수 있게 하는 플러그인입니다.
+  github: https://github.com/ychoi-kr/omegat-plugin-openai-translate
+  tech: [Java]
+  
 - name: Read it! OCR
   description: 이미지에서 텍스트를 추출하는 스트림릿 앱입니다.
   link: https://readit.streamlit.app/
