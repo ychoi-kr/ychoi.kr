@@ -18,3 +18,9 @@
 
 - name: ko-prfrdr
   description: 한국어 문장을 교정하는 명령행 프로그램입니다. 규칙 기반으로 작동합니다.
+
+- name: askwikibook
+  description: 위키북스 도서 정보를 찾아주는 챗봇입니다.
+  link: https://askwikibook.pythonanywhere.com/
+  intro_link: https://wikidocs.net/219244
+  github: https://github.com/ychoi-kr/askwikibook/
