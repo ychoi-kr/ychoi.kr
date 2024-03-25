@@ -1,7 +1,7 @@
 # 랭체인 완벽 입문
 
-홈페이지: [https://wikibook.co.kr/langchain/](https://wikibook.co.kr/langchain/)
-발행: 2024. 2. 22.
+- 홈페이지: [https://wikibook.co.kr/langchain/](https://wikibook.co.kr/langchain/)
+- 발행: 2024. 2. 22.
         
 ## 소개
 
