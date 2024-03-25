@@ -2,4 +2,5 @@
 - [위키독스](https://wikidocs.net/profile/info/book/4)
 - [앱](/apps)
 - [소셜 미디어](/channels)
+- [이력서](cv.md)
 - [기록](/log)
