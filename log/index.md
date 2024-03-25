@@ -1,1 +1,5 @@
-- [2024. 3. 25.](20240325)
+---
+layout: log
+title: "기록"
+permalink: /log/
+---
