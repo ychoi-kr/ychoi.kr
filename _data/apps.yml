@@ -9,3 +9,4 @@
 - name: Read it! OCR
   description: 이미지에서 텍스트를 추출하는 스트림릿 앱입니다.
   link: https://readit.streamlit.app/
+  github: https://github.com/ychoi-kr/readit
