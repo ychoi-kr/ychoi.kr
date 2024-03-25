@@ -1,1 +1,2 @@
+- [books](/books)
 - [log](/log)
