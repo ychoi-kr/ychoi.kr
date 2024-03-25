@@ -17,8 +17,10 @@
 - 1996~2000, 대한민국공군, 항공정비 부사관
 
 ## 프로젝트
-- [Book Creator Guide](https://chat.openai.com/g/g-7C0wg9CMN-book-creator-guide): 책을 만드는 과정을 돕는 GPT. 2024년 10주차 top picks에 선정. ([소개](https://wikidocs.net/220905))
-- [ko-prfrdr](https://github.com/ychoi-kr/ko-prfrdr): 한국어 문장 교정(규칙 기반)
+
+{% for app in site.data.apps %}
+- [{{ app.name }}]({% if app.intro_link %}{{ app.intro_link }}{% else %}{{ app.link }}{% endif %}){% if app.github %} ([GitHub]({{ app.github }})){% endif %}: {{ app.description }}
+{% endfor %}
 
 ## 저서
 
