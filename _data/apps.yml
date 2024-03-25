@@ -10,3 +10,11 @@
   description: 이미지에서 텍스트를 추출하는 스트림릿 앱입니다.
   link: https://readit.streamlit.app/
   github: https://github.com/ychoi-kr/readit
+
+- name: Book Creator Guide
+  description: 책을 만드는 과정을 돕는 GPT입니다. 2024년 10주차 top picks에 선정되었습니다.
+  link: https://chat.openai.com/g/g-7C0wg9CMN-book-creator-guide
+  intro_link: https://wikidocs.net/220905
+
+- name: ko-prfrdr
+  description: 한국어 문장을 교정하는 명령행 프로그램입니다. 규칙 기반으로 작동합니다.
