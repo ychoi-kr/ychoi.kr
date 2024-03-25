@@ -2,8 +2,8 @@
 
 ## 개인 정보
 - 이름: 최용
-- 연락처: ychoi_kr@naver.com
-- 홈페이지: https://ychoi.kr/
+- 연락처: [ychoi_kr@naver.com](mailto:ychoi_kr@naver.com)
+- 홈페이지: [https://ychoi.kr/](https://ychoi.kr/)
 
 ## 학력
 - 2023~재학, 서울사이버대학교 드론·로봇융합학과
