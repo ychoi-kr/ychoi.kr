@@ -1,0 +1,8 @@
+---
+layout: default
+---
+<h1>기록</h1>
+{% for log in site.data.logs %}
+  <h2>{{ log.date | date: "%Y. %m. %d." }}</h2>
+  {{ log.content | markdownify }}
+{% endfor %}
