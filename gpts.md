@@ -9,5 +9,5 @@ permalink: /gpts/
 제가 만든 유용한 GPT들입니다. 한번 써보세요!
 
 {% for gpt in site.data.gpts %}
-- [{{ gpt.name }}]({% if gpt.intro_link %}{{ gpt.intro_link }}{% else %}{{ gpt.link }}{% endif %}): {{ gpt.description }}
+- [{{ gpt.name }}]({{ gpt.link }}){% if gpt.intro_link %} ([소개]({{ gpt.intro_link }})){% endif %}: {{ gpt.description }}
 {% endfor %}
