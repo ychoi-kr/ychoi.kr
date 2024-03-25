@@ -5,6 +5,7 @@ permalink: /books-written/
 ---
 
 ## 저서
-{% for book in site.data.books.저서 %}
-- [{{ book.title }}]({{ book.link | default: '#' }}), {{ book.publisher }}, {{ book.date }}
+
+{% for book in site.data.authored_books %}
+  - {{ book.title }}, {{ book.publisher }}, {{ book.date }}
 {% endfor %}
