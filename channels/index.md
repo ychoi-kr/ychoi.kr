@@ -9,3 +9,6 @@
   - [대학일기](https://drone23.tistory.com/): 서울사이버대학교 드론·로봇융합학과에서 공부하면서 겪는 일을 기록합니다.
 - [페이스북](https://www.facebook.com/ychoi22)
 - [링크드인](https://www.linkedin.com/in/ychoi-kr/)
+- 사진
+  - [인스타그램](https://www.instagram.com/banghwadong_nabi/): 고양이 사진을 주로 올립니다.
+  - [플리커](https://www.flickr.com/people/sk8er_choi/): 직접 촬영한 피겨 스케이팅 사진이 있습니다.
