@@ -1,7 +1,7 @@
 # 이력서
 
 ## 개인 정보
-- 이름: 최용
+- 이름: 최용(Yong Choi)
 - 연락처: [ychoi_kr@naver.com](mailto:ychoi_kr@naver.com)
 - 홈페이지: [https://ychoi.kr/](https://ychoi.kr/)
 
