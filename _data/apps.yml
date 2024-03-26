@@ -1,3 +1,9 @@
+- name: CSV/TSV to JSONL Converter for OpenAI Fine-Tuning
+  description: OpenAI 모델을 파인튜닝할 때 입력할 데이터를 가공하는 도구입니다. CSV 또는 TSV 형식으로 prompt와 completion 쌍을 입력하면 JSONL로 변환됩니다.
+  link: https://jsonl4ft.streamlit.app/
+  github: https://github.com/ychoi-kr/jsonl4ft
+  tech: [Python, Streamlit]
+
 - name: DeepL API Free Plug-in for OmegaT
   description: OmegaT에서 DeepL 무료 API를 사용할 수 있게 하는 플러그인입니다.
   github: https://github.com/ychoi-kr/omegat-plugin-deepl-api-free
