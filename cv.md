@@ -24,10 +24,10 @@
 - [{{ app.name }}]({% if app.intro_link %}{{ app.intro_link }}{% else %}{{ app.link | default: app.github }}{% endif %}){% if app.github %} ([GitHub]({{ app.github }})){% endif %}: {{ app.description }} (기술 스택: {{ app.tech | join: ', ' }})
 {% endfor %}
 
-### GPT
+### 챗봇
 
-{% for gpt in site.data.gpts %}
-- [{{ gpt.name }}]({{ gpt.link }}){% if gpt.intro_link %} ([소개]({{ gpt.intro_link }})){% endif %}: {{ gpt.description }}
+{% for bot in site.data.bots %}
+- [{{ bot.name }}]({{ bot.link }}){% if bot.intro_link %} ([소개]({{ bot.intro_link }})){% endif %}: {{ bot.description }}
 {% endfor %}
 
 ## 저서
