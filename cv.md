@@ -24,7 +24,7 @@
 - [{{ app.name }}]({% if app.intro_link %}{{ app.intro_link }}{% else %}{{ app.link | default: app.github }}{% endif %}){% if app.github %} ([GitHub]({{ app.github }})){% endif %}: {{ app.description }} (기술 스택: {{ app.tech | join: ', ' }})
 {% endfor %}
 
-### 챗봇
+### 채팅 봇
 
 {% for bot in site.data.bots %}
 - [{{ bot.name }}]({{ bot.link }}){% if bot.intro_link %} ([소개]({{ bot.intro_link }})){% endif %}: {{ bot.description }}
@@ -36,7 +36,7 @@
   - {% if book.link %}[{{ book.title }}]({{ book.link }}){% else %}{{ book.title }}{% endif %}, {{ book.publisher }}, {{ book.date }}
 {% endfor %}
 
-## 역서
+## 번역서
 
 {% for book in site.data.translated_books %}
   - {% if book.link %}[{{ book.title }}]({{ book.link }}){% else %}{{ book.title }}{% endif %}, {{ book.authors }}, {{ book.publisher }}, {{ book.date }}
