@@ -1,9 +1,8 @@
-- [책](/books)
-- [위키독스](https://wikidocs.net/profile/info/book/4)
-- [깃허브](https://github.com/ychoi-kr/)
-- [앱](/apps)
-- [챗봇](bots.md)
-- [미디어](media.md)
-- [소셜 미디어](/channels)
-- [이력서](cv.md)
-- [기록](/log)
+---
+layout: default
+title: 홈
+---
+
+![프로필 사진](/assets/images/profile.jpg)
+
+안녕하세요, 최용입니다.👋  
