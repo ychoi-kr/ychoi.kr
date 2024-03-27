@@ -1,0 +1,25 @@
+/* 사이트 내 링크 스타일 */
+a[href^="/"] {
+  color: blue;
+  text-decoration: underline;
+}
+
+/* 외부 사이트 링크 스타일 */
+a[href^="http"]:not([href^="{{ site.url }}"]) {
+  color: green;
+  text-decoration: underline dotted;
+}
+
+nav {
+  display: flex;
+  gap: 1rem; /* 항목 간 간격 */
+}
+
+.nav-link {
+  padding: 0.5rem 1rem; /* 링크의 내부 여백 */
+  text-decoration: none; /* 밑줄 제거 */
+}
+
+.nav-link.current {
+  font-weight: bold; /* 현재 페이지 링크를 굵게 표시 */
+}
