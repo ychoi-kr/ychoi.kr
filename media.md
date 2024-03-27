@@ -1,12 +1,12 @@
 ---
-layout: page
-title: "Media"
+layout: default
+title: "미디어"
 permalink: /media/
 ---
 
 # 미디어
 
-제 활동이 미디어에 소개된 내용들입니다.
+`:newspaper:` 언론에 제가 소개되었어요!
 
 {% for item in site.data.media %}
 - [{{ item.title }}]({{ item.link }}) - {{ item.source }}, {{ item.date | date: "%Y년 %m월 %d일" }}
