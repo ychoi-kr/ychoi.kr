@@ -1,5 +1,5 @@
 ---
 layout: log
-title: "기록"
+title: "로그"
 permalink: /log/
 ---

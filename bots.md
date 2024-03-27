@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "GPT"
+title: "채팅 봇"
 permalink: /bots/
 ---
 

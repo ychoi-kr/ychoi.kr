@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "미디어"
+title: "Press"
 permalink: /press/
 ---
 
