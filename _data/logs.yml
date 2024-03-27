@@ -1,3 +1,7 @@
+- date: 2024-03-27
+  content: |
+    GitHub에서 곧바로 파일을 수정하기가 번거로워서 로컬 PC에 Ruby와 Jekyll을 설치했다. 어려움이 있었지만 Claude와 ChatGPT의 도움을 받아 성공했다.
+
 - date: 2024-03-25
   content: |
     ychoi.kr 도메인을 만들고 GitHub Pages를 이용해 홈페이지를 만들었다.
