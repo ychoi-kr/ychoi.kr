@@ -4,6 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }}</title>
+  <style>
+    /* 사이트 내 링크 스타일 */
+    a[href^="/"] {
+      color: blue;
+      text-decoration: underline;
+    }
+
+    /* 외부 사이트 링크 스타일 */
+    a[href^="http"]:not([href^="{{ site.url }}"]) {
+      color: green;
+      text-decoration: underline dotted;
+    }
+  </style>
 </head>
 <body>
   <header>
