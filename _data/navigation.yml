@@ -1,0 +1,18 @@
+- name: 책
+  link: /books
+- name: 위키독스
+  link: https://wikidocs.net/profile/info/book/4
+- name: 깃허브
+  link: https://github.com/ychoi-kr/
+- name: 앱
+  link: /apps
+- name: 챗봇
+  link: /bots
+- name: 미디어
+  link: /media
+- name: 소셜 미디어
+  link: /channels
+- name: 이력서
+  link: /cv
+- name: 기록
+  link: /log
