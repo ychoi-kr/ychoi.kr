@@ -1,11 +1,7 @@
 - name: Home
-  link: /index
+  link: /
 - name: Books
   link: /books
-- name: WikiDocs
-  link: https://wikidocs.net/profile/info/book/4
-- name: GitHub
-  link: https://github.com/ychoi-kr/
 - name: Apps
   link: /apps
 - name: Chatbots
@@ -13,8 +9,12 @@
 - name: Press
   link: /press
 - name: Social Media
-  link: /channels
+  link: /social-media
 - name: CV
   link: /cv
 - name: Logs
   link: /log
+- name: WikiDocs
+  link: https://wikidocs.net/profile/info/book/4
+- name: GitHub
+  link: https://github.com/ychoi-kr/

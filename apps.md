@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: "앱"
 permalink: /apps/
 ---

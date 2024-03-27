@@ -1,3 +1,9 @@
+---
+layout: default
+title: "책"
+permalink: /books/
+---
+
 ## 저서
 
 {% for book in site.data.authored_books %}

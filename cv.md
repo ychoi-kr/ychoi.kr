@@ -1,3 +1,9 @@
+---
+layout: default
+title: "이력서"
+permalink: /cv/
+---
+
 # 이력서
 
 ## 개인 정보
