@@ -8,12 +8,16 @@
   link: https://chat.openai.com/g/g-mpKqCwo4f-definition
 
 - name: 발번역 해독기
-  description: 이해하기 어려운 번역 투 문장을 자연스럽게 다듬어 주는 GPT입니다.
+  description: 외국어를 한국어로 번역한 문장을 자연스럽게 다듬어 주는 GPT입니다.
   link: https://chat.openai.com/g/g-cmM5tiJCK-balbeonyeog-haedoggi
 
 - name: Deobfuscator
   description: Leet나 에어비앤비체처럼 난독화된 문장을 해석하는 GPT입니다.
   link: https://chat.openai.com/g/g-kOF1v5gjn-deobfuscator
+
+- name: Short Commit Wizard
+  description: 짧은 커밋 메시지를 만들어 주는 GPT입니다.
+  link: https://chat.openai.com/g/g-DWbPknBCP-short-commit-wizard
 
 - name: 파이썬 알려주는 봇
   description: 파이썬 학습자를 돕는 챗봇입니다.
