@@ -1,4 +1,4 @@
-- [저서/역서](/books)
+- [책](/books)
 - [위키독스](https://wikidocs.net/profile/info/book/4)
 - [깃허브](https://github.com/ychoi-kr/)
 - [앱](/apps)
