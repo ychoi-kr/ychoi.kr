@@ -2,7 +2,8 @@
   authors: "타무라 하루카"
   publisher: "위키북스"
   date: "2024년"
-  link: "https://wikibook.co.kr/langchain"
+  link: "/books/langchain/"
+
 - title: "실전! 컴퓨터비전을 위한 머신러닝"
   authors: "발리아파 락슈마난, 마틴 괴르너, 라이언 길라드"
   publisher: "위키북스"
