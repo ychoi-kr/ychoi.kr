@@ -14,7 +14,7 @@ permalink: /social-media/
   - [서사대생](https://www.youtube.com/@yc_scu): 서울사이버대학교에서 배운 것이나 겪은 일을 올립니다.
 - 블로그
   - [Medium](https://medium.com/@ychoikr): 새로 만든 영어 블로그입니다. 프로그래밍 관련 글을 쓸 예정입니다.
-  - [대학일기](https://scu.ychoi.kr/): 서울사이버대학교 드론·로봇융합학과에서 공부하면서 겪는 일을 기록합니다.
+  - [대학일기](https://iscu.ychoi.kr/): 서울사이버대학교 드론·로봇융합학과에서 공부하면서 겪는 일을 기록합니다.
   - [피겨 스케이팅 블로그](https://blog.naver.com/sk8erchoi): 피겨 스케이팅 관련 정보와 기사를 모은 곳입니다.
   - [IT 블로그](https://yong-it.blogspot.com/): IT 관련 글을 올렸습니다.
 - [페이스북](https://www.facebook.com/ychoi22)
