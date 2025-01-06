@@ -47,3 +47,7 @@ permalink: /cv/
 {% for book in site.data.translated_books %}
   - {% if book.link %}[{{ book.title }}]({{ book.link }}){% else %}{{ book.title }}{% endif %}, {{ book.authors }}, {{ book.publisher }}, {{ book.date }}
 {% endfor %}
+
+## 수상
+- “2024 Chat GPT를 활용한 사회 제반 문제 해결 아이디어 공모전” 장려상, 인문사회통합성과학산센터, 2024. 6. 19.
+- “AI로 그린 그림” 장려상, (사)에이아이프렌즈학회, 2023. 11. 4.
