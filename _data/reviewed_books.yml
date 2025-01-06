@@ -1,3 +1,15 @@
+- title: "한 권으로 끝내는 실전 LLM 파인튜닝"
+  authors: "강다솔"
+  publisher: "위키북스" 
+  date: "2024년 12월"
+  link: "https://wikibook.co.kr/llm-finetuning/"
+
+- title: "딥러닝 프로젝트를 위한 허깅페이스 실전 가이드"
+  authors: "윤대희, 김동화, 송종민, 진현두"
+  publisher: "위키북스" 
+  date: "2024년 9월"
+  link: "https://wikibook.co.kr/hugging-face/"
+
 - title: "실전! 러스트로 배우는 리눅스 커널 프로그래밍"
   authors: "김백기, 우충기"
   publisher: "위키북스" 
