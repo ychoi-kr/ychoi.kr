@@ -100,6 +100,7 @@ Currently researching and developing AI-powered drone control systems, combining
 
 ## **Scholarships**  
 
+- **Academic Excellence Scholarship**, awarded for the highest GPA among 2nd-year students in the **Department of Drone & Robot Convergence** (Received in **3nd Year, Spring 2025**)  
 - **Academic Excellence Scholarship**, awarded for the highest GPA among 2nd-year students in the **Department of Drone & Robot Convergence** (Received in **2nd Year, Fall 2024**)  
 - **Academic Excellence Scholarship**, awarded for the highest GPA among 1st-year students in the **Department of Drone & Robot Convergence** (Received in **2nd Year, Spring 2024**)  
 - **Academic Excellence Scholarship**, awarded for the highest GPA among 1st-year students in the **Department of Drone & Robot Convergence** (Received in **1st Year, Fall 2023**)  
