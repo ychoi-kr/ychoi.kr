@@ -1,25 +1,30 @@
-/* ªÁ¿Ã∆Æ ≥ª ∏µ≈© Ω∫≈∏¿œ */
 a[href^="/"] {
   color: blue;
   text-decoration: underline;
 }
 
-/* ø‹∫Œ ªÁ¿Ã∆Æ ∏µ≈© Ω∫≈∏¿œ */
-a[href^="http"]:not([href^="{{ site.url }}"]) {
+/* app.ychoi.kr ÎèÑÎ©îÏù∏ÏùÑ ÎÇ¥Î∂Ä ÎßÅÌÅ¨Î°ú Ï∑®Í∏â (HTTP Î∞è HTTPS) */
+a[href^="http://app.ychoi.kr"],
+a[href^="https://app.ychoi.kr"] {
+  color: blue;
+  text-decoration: underline;
+}
+
+a[href^="http"]:not([href^="{{ site.url }}"]):not([href^="http://app.ychoi.kr"]):not([href^="https://app.ychoi.kr"]) {
   color: green;
   text-decoration: underline dotted;
 }
 
 nav {
   display: flex;
-  gap: 1rem; /* «◊∏Ò ∞£ ∞£∞› */
+  gap: 1rem;
 }
 
 .nav-link {
-  padding: 0.5rem 1rem; /* ∏µ≈©¿« ≥ª∫Œ ø©πÈ */
-  text-decoration: none; /* πÿ¡Ÿ ¡¶∞≈ */
+  padding: 0.5rem 1rem;
+  text-decoration: none;
 }
 
 .nav-link.current {
-  font-weight: bold; /* «ˆ¿Á ∆‰¿Ã¡ˆ ∏µ≈©∏¶ ±Ω∞‘ «•Ω√ */
+  font-weight: bold;
 }
