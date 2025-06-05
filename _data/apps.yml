@@ -34,11 +34,12 @@
   github: https://github.com/ychoi-kr/askwikibook/
   tech: [Python, Flask, OpenAI API]
   
-- name: equation
-  description: Equation Share는 LaTeX 문법을 사용하여 수학 수식을 쉽게 공유할 수 있는 웹 앱으로, 공유 가능한 링크를 생성합니다.
-  link: http://app.ychoi.kr/equation/
-  tech: [Python, Flask]
-
+- name: LaTeX 수식 렌더링 도구
+  description: LaTeX 문법으로 수학 수식을 입력하고 MathJax로 아름답게 렌더링하여 공유할 수 있는 도구입니다.
+  description_en: A tool for inputting mathematical equations in LaTeX syntax and rendering them beautifully with MathJax for sharing.
+  link: https://app.ychoi.kr/equation
+  tech: [Python, Flask, MathJax, LaTeX]
+  
 - name: docxmath
   description: 워드(.docx) 파일에 있는 수식의 목록을 보여주는 플라스크 앱입니다.
   link: https://docxmath.pythonanywhere.com/
@@ -59,3 +60,79 @@
   description: 한국어 문장을 교정하는 명령행 프로그램입니다. 규칙 기반으로 작동합니다.
   intro_link: https://wikidocs.net/186245
   tech: [Python]
+
+# 기존 앱들
+- name: CSV/TSV to JSONL Converter for OpenAI Fine-Tuning
+  description: OpenAI 모델을 파인튜닝할 때 입력할 데이터를 가공하는 도구입니다. CSV 또는 TSV 형식으로 prompt와 completion 쌍을 입력하면 JSONL로 변환됩니다.
+  description_en: A tool for preprocessing data for OpenAI fine-tuning. Converts CSV or TSV format prompt-completion pairs into JSONL.
+  link: https://jsonl4ft.streamlit.app/
+  github: https://github.com/ychoi-kr/jsonl4ft
+  tech: [Python, Streamlit]
+
+- name: DeepL API Free Plug-in for OmegaT
+  description: OmegaT에서 DeepL 무료 API를 사용할 수 있게 하는 플러그인입니다.
+  description_en: A plug-in that enables the use of the free DeepL API in OmegaT.
+  github: https://github.com/ychoi-kr/omegat-plugin-deepl-api-free
+  tech: [Java]
+
+- name: Solar Mini Translate Plug-in for OmegaT
+  description: OmegaT에서 Solar Mini Translate API를 사용할 수 있게 하는 플러그인입니다.
+  github: https://github.com/ychoi-kr/omegat-plugin-solar-mini-translate
+  tech: [Java]
+
+- name: OpenAI plug-in for OmegaT
+  description: OmegaT에서 OpenAI API를 사용해 기계 번역을 할 수 있게 하는 플러그인입니다.
+  github: https://github.com/ychoi-kr/omegat-plugin-openai-translate
+  tech: [Java]
+  
+- name: Read it! OCR
+  description: 이미지에서 텍스트를 추출하는 스트림릿 앱입니다.
+  link: https://readit.streamlit.app/
+  github: https://github.com/ychoi-kr/readit
+  tech: [Python, Streamlit, EasyOCR]
+
+- name: askwikibook
+  description: 위키북스 도서 정보를 찾아주는 챗봇입니다.
+  link: https://askwikibook.pythonanywhere.com/
+  intro_link: https://wikidocs.net/219244
+  github: https://github.com/ychoi-kr/askwikibook/
+  tech: [Python, Flask, OpenAI API]
+
+- name: 글첵(GuelCheck)
+  description: 글쓰기 전문가(작가, 기자, 교정/교열 담당자 등)를 위한 맞춤법/문장 검사 웹 애플리케이션입니다. 규칙 기반으로 작동합니다.
+  link: https://geulcheck.pythonanywhere.com/
+  intro_link: https://wikidocs.net/186245
+  tech: [Python, Flask]
+
+- name: docxmath
+  description: 워드(.docx) 파일에 있는 수식의 목록을 보여주는 플라스크 앱입니다.
+  link: https://docxmath.pythonanywhere.com/
+  tech: [Python, Flask]
+
+- name: ko-editor
+  description: 교정/교열 업무 능률을 높이는 명령행 도구 모음입니다.
+  intro_link: http://wikidocs.net/228454
+  tech: [Python]
+
+- name: ko-prfrdr
+  description: 한국어 문장을 교정하는 명령행 프로그램입니다. 규칙 기반으로 작동합니다.
+  intro_link: https://wikidocs.net/186245
+  tech: [Python]
+
+- name: 글자수 세기
+  description: 텍스트의 글자수, 단어수, 문단수를 실시간으로 분석하는 온라인 도구입니다. 한글/영문/숫자를 구분하여 상세 통계를 제공합니다.
+  description_en: An online tool that analyzes character count, word count, and paragraph count in real-time, providing detailed statistics by distinguishing Korean, English, and numbers.
+  link: https://app.ychoi.kr/wc/
+  tech: [HTML5, JavaScript, CSS3]
+
+- name: 마크다운 변환기
+  description: 마크다운 문서의 들여쓰기를 조정하고, LaTeX 수식을 변환하며, 인라인 링크를 각주로 변환하는 문서 편집 도구입니다.
+  description_en: A document editing tool that adjusts markdown indentation, converts LaTeX equations, and transforms inline links to footnotes.
+  link: https://app.ychoi.kr/mdchef/
+  tech: [JavaScript, RegExp, HTML5]
+
+- name: 기타 튜너
+  description: 마이크를 통해 기타 소리를 분석하여 정확한 조율을 도와주는 6현 기타 튜너입니다. 표준 튜닝, 반음 내림, 드롭 D 튜닝을 지원합니다.
+  description_en: A 6-string guitar tuner that analyzes guitar sounds through the microphone for accurate tuning. Supports standard tuning, half-step down, and drop D tuning.
+  link: https://app.ychoi.kr/guitar-tuner
+  tech: [Web Audio API, JavaScript, HTML5]
