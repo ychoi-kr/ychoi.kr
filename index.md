@@ -16,7 +16,25 @@ permalink: /
 - 🛠️ [개발한 앱 및 프로젝트](/apps/)  
 - 🤖 [커스텀 챗봇](/bots/)  
 
-## 📝 최근 업데이트
-- **📖 최신 저서:**  
-  {% assign latest_book = site.data.authored_books | first %}
-  - **[{{ latest_book.title }}]({{ latest_book.link }})**, {{ latest_book.publisher }}, {{ latest_book.date }}  
+## 📝 새 소식
+
+**📖 저서**
+{% assign authored_books_sorted = site.data.authored_books | sort: "date" | reverse %}
+{% for book in authored_books_sorted limit:1 %}
+  - {% if book.link %}**[{{ book.title }}]({{ book.link }})**{% else %}**{{ book.title }}**{% endif %}, {{ book.publisher }}, {{ book.date | date: "%Y년 %m월" | replace: " 0", " " }}
+{% endfor %}
+
+**📚 번역서**
+{% assign translated_books_sorted = site.data.translated_books | sort: "date" | reverse %}
+{% for book in translated_books_sorted limit:2 %}
+  - {% if book.link %}**[{{ book.title }}]({{ book.link }})**{% else %}**{{ book.title }}**{% endif %}, {{ book.authors }}, {{ book.publisher }}, {{ book.date | date: "%Y년 %m월" | replace: " 0", " " }}
+{% endfor %}
+
+**🧐 기술 검토 및 교정 도서**
+{% assign reviewed_books_sorted = site.data.reviewed_books | sort: "date" | reverse %}
+{% for book in reviewed_books_sorted limit:3 %}
+  - {% if book.link %}**[{{ book.title }}]({{ book.link }})**{% else %}**{{ book.title }}**{% endif %}, {{ book.authors }}, {{ book.publisher }}, {{ book.date | date: "%Y년 %m월" | replace: " 0", " " }}
+{% endfor %}
+
+<br>
+[**전체 도서 목록 보기 →**](/books/)

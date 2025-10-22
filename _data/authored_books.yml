@@ -18,6 +18,7 @@
   publisher: "패스트캠퍼스"
   publisher_en: "Fast Campus"
   date: 2022-12-05
+  link: /books/hello-it-python/
 
 - title: "OpenAI, 구글 Gemini, 업스테이지 Solar API를 활용한 실전 LLM 앱 개발"
   publisher: "위키북스"
