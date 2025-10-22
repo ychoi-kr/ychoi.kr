@@ -37,7 +37,7 @@
   category: web_app
   link: https://readit.streamlit.app/
   github: https://github.com/ychoi-kr/readit
-  tech: [Python, Streamlit, EasyOCR]
+  tech: [Python, Streamlit]
   show_in_cv: false
 
 - name: askwikibook
@@ -133,14 +133,14 @@
   description_en: MCP server for extracting PDF annotations and highlights with text context
   category: mcp_server
   github: https://github.com/ychoi-kr/pdf-memo-mcp
-  tech: [Python, MCP, PyPDF2, pdfplumber]
+  tech: [Python, MCP]
 
 - name: pdf-processor-mcp
   description: PDF 메타데이터 추출, 목차 파싱, 페이지 분할 기능을 제공하는 MCP 서버
   description_en: MCP server for PDF processing including metadata extraction, TOC parsing, and page splitting
   category: mcp_server
   github: https://github.com/ychoi-kr/pdf-processor-mcp
-  tech: [Python, MCP, PyMuPDF, pypdf]
+  tech: [Python, MCP]
   show_in_cv: false
 
 - name: wikidocs-mcp
@@ -164,7 +164,7 @@
   description_en: Control DJI Tello EDU drone using Raspberry Pi and PiFace CAD
   category: drone_robotics
   github: https://github.com/ychoi-kr/piface-tello
-  tech: [Python, Raspberry Pi, OpenCV]
+  tech: [Python, Raspberry Pi]
   show_in_cv: true
 
 - name: navercafe
@@ -174,3 +174,10 @@
   github: https://github.com/ychoi-kr/navercafe
   tech: [Python, Pandas]
   show_in_cv: true
+
+- name: Claude HWP Converter Skill
+  description: 한글 문서(HWP/HWPX)를 텍스트로 변환하는 Claude Skill
+  description_en: Claude Skill to convert Korean HWP/HWPX documents to plain text
+  category: ai_llm
+  github: https://github.com/ychoi-kr/claude-hwp-converter-skill
+  tech: [Python, Claude Skills, HWP/HWPX]
