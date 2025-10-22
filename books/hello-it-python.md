@@ -11,7 +11,7 @@ permalink: /books/hello-it-python/
 - 출판사: 패스트캠퍼스  
 - 발행: 2022. 12. 05.  
 - ISBN: 9791197641732  
-- 교보문고: [https://product.kyobobook.co.kr/detail/S000202620983](https://product.kyobobook.co.kr/detail/S000202620983)
+- 절판
 
 ## 소개
 
