@@ -1,138 +1,176 @@
 - name: CSV/TSV to JSONL Converter for OpenAI Fine-Tuning
   description: OpenAI 모델을 파인튜닝할 때 입력할 데이터를 가공하는 도구입니다. CSV 또는 TSV 형식으로 prompt와 completion 쌍을 입력하면 JSONL로 변환됩니다.
   description_en: A tool for preprocessing data for OpenAI fine-tuning. Converts CSV or TSV format prompt-completion pairs into JSONL.
+  category: web_app
   link: https://jsonl4ft.streamlit.app/
   github: https://github.com/ychoi-kr/jsonl4ft
   tech: [Python, Streamlit]
+  show_in_cv: false
 
 - name: DeepL API Free Plug-in for OmegaT
   description: OmegaT에서 DeepL 무료 API를 사용할 수 있게 하는 플러그인입니다.
   description_en: A plug-in that enables the use of the free DeepL API in OmegaT.
+  category: llm_app
   github: https://github.com/ychoi-kr/omegat-plugin-deepl-api-free
   tech: [Java]
+  show_in_cv: false
 
 - name: Solar Mini Translate Plug-in for OmegaT
   description: OmegaT에서 Solar Mini Translate API를 사용할 수 있게 하는 플러그인입니다.
+  description_en: A plug-in that enables the use of the Solar Mini Translate API in OmegaT.
+  category: llm_app
   github: https://github.com/ychoi-kr/omegat-plugin-solar-mini-translate
   tech: [Java]
+  show_in_cv: false
 
 - name: OpenAI plug-in for OmegaT
   description: OmegaT에서 OpenAI API를 사용해 기계 번역을 할 수 있게 하는 플러그인입니다.
+  description_en: A plug-in that enables machine translation using the OpenAI API in OmegaT.
+  category: llm_app
   github: https://github.com/ychoi-kr/omegat-plugin-openai-translate
   tech: [Java]
+  show_in_cv: true
   
 - name: Read it! OCR
   description: 이미지에서 텍스트를 추출하는 스트림릿 앱입니다.
+  description_en: A Streamlit app that extracts text from images.
+  category: web_app
   link: https://readit.streamlit.app/
   github: https://github.com/ychoi-kr/readit
   tech: [Python, Streamlit, EasyOCR]
+  show_in_cv: false
 
 - name: askwikibook
   description: 위키북스 도서 정보를 찾아주는 챗봇입니다.
+  description_en: A chatbot that helps you find Wikibooks book information.
+  category: web_app
   link: https://askwikibook.pythonanywhere.com/
   intro_link: https://wikidocs.net/219244
   github: https://github.com/ychoi-kr/askwikibook/
   tech: [Python, Flask, OpenAI API]
+  show_in_cv: true
   
 - name: LaTeX 수식 렌더링 도구
+  name_en: LaTeX Equation Renderer
   description: LaTeX 문법으로 수학 수식을 입력하고 MathJax로 아름답게 렌더링하여 공유할 수 있는 도구입니다.
   description_en: A tool for inputting mathematical equations in LaTeX syntax and rendering them beautifully with MathJax for sharing.
+  category: web_app
   link: https://app.ychoi.kr/equation
   tech: [Python, Flask, MathJax, LaTeX]
-  
-- name: docxmath
-  description: 워드(.docx) 파일에 있는 수식의 목록을 보여주는 플라스크 앱입니다.
-  link: https://docxmath.pythonanywhere.com/
-  tech: [Python, Flask]
-
-- name: 글첵(GuelCheck)
-  description: 글쓰기 전문가(작가, 기자, 교정/교열 담당자 등)를 위한 맞춤법/문장 검사 웹 애플리케이션입니다. 규칙 기반으로 작동합니다.
-  link: https://geulcheck.pythonanywhere.com/
-  intro_link: https://wikidocs.net/186245
-  tech: [Python, Flask]
-
-- name: ko-editor
-  description: 교정/교열 업무 능률을 높이는 명령행 도구 모음입니다.
-  intro_link: http://wikidocs.net/228454
-  tech: [Python]
-
-- name: ko-prfrdr
-  description: 한국어 문장을 교정하는 명령행 프로그램입니다. 규칙 기반으로 작동합니다.
-  intro_link: https://wikidocs.net/186245
-  tech: [Python]
-
-# 기존 앱들
-- name: CSV/TSV to JSONL Converter for OpenAI Fine-Tuning
-  description: OpenAI 모델을 파인튜닝할 때 입력할 데이터를 가공하는 도구입니다. CSV 또는 TSV 형식으로 prompt와 completion 쌍을 입력하면 JSONL로 변환됩니다.
-  description_en: A tool for preprocessing data for OpenAI fine-tuning. Converts CSV or TSV format prompt-completion pairs into JSONL.
-  link: https://jsonl4ft.streamlit.app/
-  github: https://github.com/ychoi-kr/jsonl4ft
-  tech: [Python, Streamlit]
-
-- name: DeepL API Free Plug-in for OmegaT
-  description: OmegaT에서 DeepL 무료 API를 사용할 수 있게 하는 플러그인입니다.
-  description_en: A plug-in that enables the use of the free DeepL API in OmegaT.
-  github: https://github.com/ychoi-kr/omegat-plugin-deepl-api-free
-  tech: [Java]
-
-- name: Solar Mini Translate Plug-in for OmegaT
-  description: OmegaT에서 Solar Mini Translate API를 사용할 수 있게 하는 플러그인입니다.
-  github: https://github.com/ychoi-kr/omegat-plugin-solar-mini-translate
-  tech: [Java]
-
-- name: OpenAI plug-in for OmegaT
-  description: OmegaT에서 OpenAI API를 사용해 기계 번역을 할 수 있게 하는 플러그인입니다.
-  github: https://github.com/ychoi-kr/omegat-plugin-openai-translate
-  tech: [Java]
-  
-- name: Read it! OCR
-  description: 이미지에서 텍스트를 추출하는 스트림릿 앱입니다.
-  link: https://readit.streamlit.app/
-  github: https://github.com/ychoi-kr/readit
-  tech: [Python, Streamlit, EasyOCR]
-
-- name: askwikibook
-  description: 위키북스 도서 정보를 찾아주는 챗봇입니다.
-  link: https://askwikibook.pythonanywhere.com/
-  intro_link: https://wikidocs.net/219244
-  github: https://github.com/ychoi-kr/askwikibook/
-  tech: [Python, Flask, OpenAI API]
-
-- name: 글첵(GuelCheck)
-  description: 글쓰기 전문가(작가, 기자, 교정/교열 담당자 등)를 위한 맞춤법/문장 검사 웹 애플리케이션입니다. 규칙 기반으로 작동합니다.
-  link: https://geulcheck.pythonanywhere.com/
-  intro_link: https://wikidocs.net/186245
-  tech: [Python, Flask]
+  show_in_cv: false
 
 - name: docxmath
   description: 워드(.docx) 파일에 있는 수식의 목록을 보여주는 플라스크 앱입니다.
+  description_en: A Flask app that displays a list of equations in Word (.docx) files.
+  category: web_app
   link: https://docxmath.pythonanywhere.com/
   tech: [Python, Flask]
+  show_in_cv: false
+
+- name: 글첵
+  name_en: GuelCheck
+  description: 글쓰기 전문가(작가, 기자, 교정/교열 담당자 등)를 위한 맞춤법/문장 검사 웹 애플리케이션입니다. 규칙 기반으로 작동합니다.
+  description_en: GuelCheck is a web application for spelling and sentence checking tailored for writing professionals (writers, journalists, proofreaders, etc.). It operates on a rule-based system.
+  category: web_app
+  link: https://geulcheck.pythonanywhere.com/
+  intro_link: https://wikidocs.net/186245
+  tech: [Python, Flask]
+  show_in_cv: true
 
 - name: ko-editor
   description: 교정/교열 업무 능률을 높이는 명령행 도구 모음입니다.
+  description_en: A command-line toolkit to enhance proofreading and editing workflow.
+  category: cli_tool
   intro_link: http://wikidocs.net/228454
   tech: [Python]
+  show_in_cv: true
 
 - name: ko-prfrdr
   description: 한국어 문장을 교정하는 명령행 프로그램입니다. 규칙 기반으로 작동합니다.
+  description_en: A command-line program for proofreading Korean sentences. It operates on a rule-based system.
+  category: cli_tool
   intro_link: https://wikidocs.net/186245
   tech: [Python]
+  show_in_cv: false
 
 - name: 글자수 세기
+  name_en: Word Counter
   description: 텍스트의 글자수, 단어수, 문단수를 실시간으로 분석하는 온라인 도구입니다. 한글/영문/숫자를 구분하여 상세 통계를 제공합니다.
   description_en: An online tool that analyzes character count, word count, and paragraph count in real-time, providing detailed statistics by distinguishing Korean, English, and numbers.
+  category: web_app
   link: https://app.ychoi.kr/wc/
   tech: [HTML5, JavaScript, CSS3]
+  show_in_cv: false
 
 - name: 마크다운 변환기
+  name_en: Markdown Chef
   description: 마크다운 문서의 들여쓰기를 조정하고, LaTeX 수식을 변환하며, 인라인 링크를 각주로 변환하는 문서 편집 도구입니다.
   description_en: A document editing tool that adjusts markdown indentation, converts LaTeX equations, and transforms inline links to footnotes.
+  category: web_app
   link: https://app.ychoi.kr/mdchef/
   tech: [JavaScript, RegExp, HTML5]
+  show_in_cv: false
 
 - name: 기타 튜너
+  name_en: Guitar Tuner
   description: 마이크를 통해 기타 소리를 분석하여 정확한 조율을 도와주는 6현 기타 튜너입니다. 표준 튜닝, 반음 내림, 드롭 D 튜닝을 지원합니다.
   description_en: A 6-string guitar tuner that analyzes guitar sounds through the microphone for accurate tuning. Supports standard tuning, half-step down, and drop D tuning.
+  category: web_app
   link: https://app.ychoi.kr/guitar-tuner
   tech: [Web Audio API, JavaScript, HTML5]
+  show_in_cv: true
+
+- name: ko-stdict-mcp-server
+  description: 표준국어대사전 검색을 위한 MCP 서버입니다.
+  description_en: MCP server for searching the Standard Korean Language Dictionary
+  category: mcp_server
+  github: https://github.com/ychoi-kr/ko-stdict-mcp-server
+  tech: [Python, MCP]
+  show_in_cv: false
+
+- name: pdf-memo-mcp
+  description: PDF 주석 및 하이라이트를 텍스트 컨텍스트와 함께 추출하는 MCP 서버
+  description_en: MCP server for extracting PDF annotations and highlights with text context
+  category: mcp_server
+  github: https://github.com/ychoi-kr/pdf-memo-mcp
+  tech: [Python, MCP, PyPDF2, pdfplumber]
+
+- name: pdf-processor-mcp
+  description: PDF 메타데이터 추출, 목차 파싱, 페이지 분할 기능을 제공하는 MCP 서버
+  description_en: MCP server for PDF processing including metadata extraction, TOC parsing, and page splitting
+  category: mcp_server
+  github: https://github.com/ychoi-kr/pdf-processor-mcp
+  tech: [Python, MCP, PyMuPDF, pypdf]
+  show_in_cv: false
+
+- name: wikidocs-mcp
+  description: 위키독스 책과 블로그를 읽고, 편집하고, 관리할 수 있는 MCP 서버
+  description_en: MCP server for reading, editing, and managing Wikidocs books and blogs
+  category: mcp_server
+  github: https://github.com/ychoi-kr/wikidocs-mcp
+  tech: [Python, MCP]
+  show_in_cv: true
+
+- name: xlsm-llm
+  description: 로컬 및 클라우드 기반 LLM과 상호작용하는 Excel VBA 함수
+  description_en: Excel VBA functions for interacting with local and cloud-based LLMs
+  category: ai_llm
+  github: https://github.com/ychoi-kr/xlsm-llm
+  tech: [VBA, Excel]
+  show_in_cv: true
+
+- name: piface-tello
+  description: Raspberry Pi와 PiFace CAD를 사용하여 DJI Tello EDU 드론을 제어하는 프로그램
+  description_en: Control DJI Tello EDU drone using Raspberry Pi and PiFace CAD
+  category: drone_robotics
+  github: https://github.com/ychoi-kr/piface-tello
+  tech: [Python, Raspberry Pi, OpenCV]
+  show_in_cv: true
+
+- name: navercafe
+  description: 네이버 카페 게시물 분석을 위한 데이터 수집 및 가공 파이썬 라이브러리
+  description_en: A Python library for data collection and processing to analyze Naver Cafe posts
+  category: utilities
+  github: https://github.com/ychoi-kr/navercafe
+  tech: [Python, Pandas]
+  show_in_cv: true

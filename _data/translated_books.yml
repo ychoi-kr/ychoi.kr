@@ -1,74 +1,118 @@
-- title: "랭체인과 랭그래프로 구현하는 RAG・AI 에이전트 실전 입문"
-  authors: "니시미 마사히로, 요시다 신고, 오시마 유키"
-  publisher: "위키북스"
-  date: "2025년 6월"
-  link: "/books/llm-agent/"
-- title: "머신러닝 엔지니어링 with 파이썬"
-  authors: "앤드루 맥마흔"
-  publisher: "위키북스"
-  date: "2025년 4월"
-  link: "/books/mlops/"
-- title: "실전! LLM을 활용한 생성형 AI 애플리케이션 개발"
-  authors: "발렌티나 알토"
-  publisher: "위키북스"
-  date: "2024년 11월"
-  link: "/books/llm-powered-apps/"
-- title: "챗GPT와 랭체인을 활용한 LLM 기반 AI 앱 개발"
-  authors: "요시다 신고, 오시마 유키"
-  publisher: "위키북스"
-  date: "2024년 6월"
-  link: "/books/llm-apps/"
-- title: "OpenAI API와 파이썬으로 나만의 챗GPT 만들기"
-  authors: "후루카와 쇼이치, 오기와라 유이"
-  publisher: "위키북스"
-  date: "2024년 4월"
-  link: "/books/my-chatgpt/"
-- title: "랭체인 완벽 입문"
-  authors: "타무라 하루카"
-  publisher: "위키북스"
-  date: "2024년 2월"
-  link: "/books/langchain/"
-- title: "실전! 컴퓨터비전을 위한 머신러닝"
-  authors: "발리아파 락슈마난, 마틴 괴르너, 라이언 길라드"
-  publisher: "위키북스"
-  date: "2023년 7월"
-  link: "https://wikibook.co.kr/mlvision"
-- title: "파이썬 데이터 클리닝 쿡북"
-  authors: "마이클 워커"
-  publisher: "위키북스"
-  date: "2021년 11월"
-  link: "https://wikibook.co.kr/data-cleansing"
-- title: "웹 애플리케이션 보안"
-  title_en: "Web Application Security: Exploitation and Countermeasures for Modern Web Applications"
-  authors: "앤드루 호프먼"
-  authors_en: "Andrew Hoffman"
-  publisher: "한빛미디어"
-  publisher_en: "Hanbit Media"
-  date: "2021년 2월"
-  date_en: "February 2021"
-  link: "https://www.hanbit.co.kr/store/books/look.php?p_code=B3641625998"
-- title: "침투 본능, 해커의 기술"
-  authors: "아드리안 프루티아누"
-  publisher: "위키북스"
-  link: "https://wikibook.co.kr/hacker"
-  date: "2020년 5월"
-- title: "블록체인으로 구현하는 사이버 보안"
-  authors: "라즈니쉬 굽타"
-  publisher: "위키북스"
-  date: "2018년 11월"
-  link: "https://wikibook.co.kr/cybersecurity-with-blockchain"
-- title: "솔리디티 프로그래밍 에센셜"
-  authors: "리테시 모디"
-  publisher: "위키북스"
-  date: "2018년 8월"
-  link: "https://wikibook.co.kr/solidity-essentials"
-- title: "익스플로링 라즈베리 파이"
-  authors: "데릭 몰로이"
-  publisher: "위키북스"
-  date: "2018년 4월"
-  link: "https://wikibook.co.kr/exploring-raspberry-pi"
-- title: "파이썬으로 배우는 데이터 과학 입문과 실습"
-  authors: "데이비 실린, 아르노 메이즈맨, 모하메드 알리"
-  publisher: "위키북스"    
-  date: "2018년 2월"
-  link: "https://wikibook.co.kr/introducing-data-science"
+- title: 파이썬으로 배우는 데이터 과학 입문과 실습
+  original_title: Introducing Data Science
+  authors: 데이비 실린, 아르노 메이즈맨, 모하메드 알리
+  authors_en: Davy Cielen, Arno Meysman, Mohamed Ali
+  publisher: 위키북스
+  publisher_en: Wikibooks
+  date: 2018-02-13
+  link: https://wikibook.co.kr/introducing-data-science
+  show_in_cv: true
+- title: 익스플로링 라즈베리 파이
+  original_title: Exploring Raspberry Pi
+  authors: 데릭 몰로이
+  authors_en: Derek Molloy
+  publisher: 위키북스
+  publisher_en: Wikibooks
+  date: 2018-04-03
+  link: https://wikibook.co.kr/exploring-raspberry-pi
+  show_in_cv: true
+- title: 솔리디티 프로그래밍 에센셜
+  authors: 리테시 모디
+  publisher: 위키북스
+  date: 2018-08-17
+  link: https://wikibook.co.kr/solidity-essentials
+  show_in_cv: false
+- title: 블록체인으로 구현하는 사이버 보안
+  authors: 라즈니쉬 굽타
+  publisher: 위키북스
+  date: 2018-11-22
+  link: https://wikibook.co.kr/cybersecurity-with-blockchain
+  show_in_cv: false
+- title: 침투 본능, 해커의 기술
+  original_title: 'Becoming the Hacker: The Playbook for Getting Inside the Mind of
+    the Attacker'
+  authors: 아드리안 프루티아누
+  authors_en: Adrian Pruteanu
+  publisher: 위키북스
+  publisher_en: Wikibooks
+  link: https://wikibook.co.kr/hacker
+  date: 2020-05-20
+  show_in_cv: false
+- title: 웹 애플리케이션 보안
+  original_title: 'Web Application Security: Exploitation and Countermeasures for
+    Modern Web Applications'
+  authors: 앤드루 호프먼
+  authors_en: Andrew Hoffman
+  publisher: 한빛미디어
+  publisher_en: Hanbit Media
+  date: 2021-02-19
+  link: https://www.hanbit.co.kr/store/books/look.php?p_code=B3641625998
+  show_in_cv: true
+- title: 파이썬 데이터 클리닝 쿡북
+  authors: 마이클 워커
+  publisher: 위키북스
+  authors_en: Michael Walker
+  publisher_en: Wikibooks
+  date: 2021-11-19
+  link: https://wikibook.co.kr/data-cleansing
+  show_in_cv: false
+- title: 실전! 컴퓨터비전을 위한 머신러닝
+  original_title: Practical Machine Learning for Computer Vision
+  authors: 발리아파 락슈마난, 마틴 괴르너, 라이언 길라드
+  authors_en: Valliappa Lakshmanan, Martin Görner, Ryan Gillard
+  publisher: 위키북스
+  publisher_en: Wikibooks
+  date: 2023-07-18
+  link: https://wikibook.co.kr/mlvision
+  show_in_cv: true
+- title: 랭체인 완벽 입문
+  authors: 타무라 하루카
+  publisher: 위키북스
+  authors_en: Haruka Tamura
+  publisher_en: Wikibooks
+  date: 2024-02-22
+  link: /books/langchain/
+  show_in_cv: false
+- title: OpenAI API와 파이썬으로 나만의 챗GPT 만들기
+  authors: 후루카와 쇼이치, 오기와라 유이
+  authors_en: Shoichi Furukawa, Yui Ogiwara
+  publisher: 위키북스
+  publisher_en: Wikibooks
+  date: 2024-04-19
+  link: /books/my-chatgpt/
+  show_in_cv: false
+- title: 챗GPT와 랭체인을 활용한 LLM 기반 AI 앱 개발
+  original_title: ChatGPT/LangChainによるチャットシステム構築［実践］入門
+  authors: 요시다 신고, 오시마 유키
+  authors_en: Shingo Yoshida, Yuki Oshima
+  publisher: 위키북스
+  publisher_en: Wikibooks
+  date: 2024-06-05
+  link: /books/llm-apps/
+  show_in_cv: true
+- title: 실전! LLM을 활용한 생성형 AI 애플리케이션 개발
+  authors: 발렌티나 알토
+  publisher: 위키북스
+  authors_en: Valentina Alto
+  publisher_en: Wikibooks
+  date: 2024-11-15
+  link: /books/llm-powered-apps/
+  show_in_cv: false
+- title: 머신러닝 엔지니어링 with 파이썬
+  original_title: Machine Learning Engineering with Python - Second Edition
+  authors: 앤드루 맥마흔
+  publisher: 위키북스
+  authors_en: Andrew McMahon
+  publisher_en: Wikibooks
+  date: 2025-04-24
+  link: /books/mlops/
+  show_in_cv: true
+- title: 랭체인과 랭그래프로 구현하는 RAG・AI 에이전트 실전 입문
+  original_title: LangChain と LangGraph による RAG・AI エージェント［実践］入門
+  authors: 니시미 마사히로, 요시다 신고, 오시마 유키
+  authors_en: Masahiro Nishimi, Shingo Yoshida, Yuki Oshima
+  publisher: 위키북스
+  publisher_en: Wikibooks
+  date: 2025-06-20
+  link: /books/llm-agent/
+  show_in_cv: true

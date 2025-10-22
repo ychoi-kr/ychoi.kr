@@ -14,15 +14,13 @@ permalink: /cv/
 - **Location**: Seoul, Korea
 
 ## Summary
-Experienced technical reviewer, software consultant, and AI application developer with a strong background in drone and robotics convergence, software development, and technical publishing. Over 20 years of experience across industries, including software consulting, IT system operations, and technical book reviewing.
+Experienced technical reviewer, software consultant, and AI application developer with a strong background in drone and robotics convergence, software development, and technical publishing. Nearly 30 years of experience across industries, including software consulting, IT system operations, and technical book reviewing and translation.
 
-Passionate about integrating AI into real-world applications, particularly in drone automation and control systems. Skilled in LLM applications, AI-driven automation, and software development. Experienced in delivering lectures and workshops on AI technologies, including LLM-based applications and GPT customization.
-
-Currently researching and developing AI-powered drone control systems, combining machine learning, embedded systems, and robotics to enhance automation capabilities. Actively involved in technical writing, publishing, and translating books on AI and software technologies.
+Passionate about integrating AI into real-world applications. Skilled in LLM applications, AI-driven automation, software development, and developing AI integrations such as MCP servers and Claude skills. Experienced in delivering lectures and workshops on AI technologies, including LLM-based applications, AI assistants, and AI agents.
 
 ## Education
-- **Seoul Cyber University**, BSc in Drone & Robotics Convergence (2023–Present)
-- **Korea National Open University**, BSc in Computer Science (1999–2004)
+- **Seoul Cyber University**, BSc in Drone & Robotics Convergence (March 2023–Present, Expected February 2026, Early graduation in 3 years)
+- **Korea National Open University**, BSc in Computer Science (March 1999–February 2004)
 
 ## Extracurricular Activities
 - KCPSW (AI-Powered Drone Software Development Team), 2024
@@ -66,41 +64,49 @@ Currently researching and developing AI-powered drone control systems, combining
 
 ### Applications
 
-{% for app in site.data.apps %}
-- [{{ app.name }}]({{ app.link }}){% if app.github %} ([GitHub]({{ app.github }})){% endif %}: {{ app.description_en | default: app.description }} (Tech stack: {{ app.tech | join: ', ' }})
+{% assign cv_projects = site.data.apps | where: "show_in_cv", true %}
+{% for app in cv_projects %}
+- [{{ app.name_en | default: app.name }}]({{ app.link }}){% if app.github %} ([GitHub]({{ app.github }})){% endif %}: {{ app.description_en | default: app.description }} (Tech stack: {{ app.tech | join: ', ' }})
 {% endfor %}
 
-### Chatbots
+[View complete portfolio →](/apps/)
 
-{% for bot in site.data.bots %}
+### GPTs
+
+{% assign cv_gpts = site.data.gpts | where: "show_in_cv", true %}
+{% for bot in cv_gpts %}
   {% if bot.status == "active" %}
-- [{{ bot.name }}]({{ bot.link }}){% if bot.intro_link %} ([Intro]({{ bot.intro_link }})){% endif %}: {{ bot.description_en | default: bot.description }}
+- [{{ bot.name_en | default: bot.name }}]({{ bot.link }}){% if bot.intro_link %} ([Intro]({{ bot.intro_link }})){% endif %}: {{ bot.description_en | default: bot.description }}
   {% endif %}
 {% endfor %}
+
+[View complete portfolio →](/bots/)
 
 ## Publications
 ### Authored Books
 
 {% for book in site.data.authored_books %}
-- {% if book.link %}[{{ book.title_en | default: book.title }}]({{ book.link }}){% else %}{{ book.title_en | default: book.title }}{% endif %}, {{ book.publisher_en | default: book.publisher }}, {{ book.date_en | default: book.date }}
+- {% if book.link %}[{{ book.title_en | default: book.title }}]({{ book.link }}){% else %}{{ book.title_en | default: book.title }}{% endif %}, {{ book.publisher_en | default: book.publisher }}, {{ book.date | date: "%B %Y" }}
 {% endfor %}
 
 ### Translations
 
-{% for book in site.data.translated_books %}
-- {% if book.link %}[{{ book.title_en | default: book.title }}]({{ book.link }}){% else %}{{ book.title_en | default: book.title }}{% endif %}, {{ book.authors_en | default: book.authors }}, {{ book.publisher_en | default: book.publisher }}, {{ book.date_en | default: book.date }}
+{% assign cv_translations = site.data.translated_books | where: "show_in_cv", true %}
+{% for book in cv_translations %}
+- {% if book.link %}[{{ book.original_title | default: book.title }}]({{ book.link }}){% else %}{{ book.original_title | default: book.title }}{% endif %}, {{ book.authors_en | default: book.authors }}, {{ book.publisher_en | default: book.publisher }}, {{ book.date | date: "%B %Y" }}
 {% endfor %}
+
+[View complete portfolio →](/books/)
 
 ### Research Papers
 - The Necessity and Implementation Plan of AI Technology for Automation of Platoon-level Reconnaissance Drone Operations, [Proceedings of the 2024 Autumn Conference of the Korean Institute of Defense Technology](http://www.kidet.or.kr/index.php?hCode=BOARD&page=view&bo_idx=1&idx=1259)
 
 ## Awards
-- Encouragement Award, "2024 Chat GPT Idea Contest for Solving Various Social Issues," Center for Humanities and Social Integration and Dissemination, June 19, 2024.
-- Encouragement Award, "AI-Generated Artwork Contest," Association of Artificial Intelligence Friends (AAIF), November 4, 2023.
+{% for award in site.data.awards %}
+- {{ award.title_en }}, "{{ award.event_en | default: award.field_en }}", {{ award.organization_en }}, {{ award.date_en }}
+{% endfor %}
 
 ## **Scholarships**  
-
-- **Academic Excellence Scholarship**, awarded for the highest GPA among 2nd-year students in the **Department of Drone & Robot Convergence** (Received in **3nd Year, Spring 2025**)  
-- **Academic Excellence Scholarship**, awarded for the highest GPA among 2nd-year students in the **Department of Drone & Robot Convergence** (Received in **2nd Year, Fall 2024**)  
-- **Academic Excellence Scholarship**, awarded for the highest GPA among 1st-year students in the **Department of Drone & Robot Convergence** (Received in **2nd Year, Spring 2024**)  
-- **Academic Excellence Scholarship**, awarded for the highest GPA among 1st-year students in the **Department of Drone & Robot Convergence** (Received in **1st Year, Fall 2023**)  
+{% for scholarship in site.data.scholarships %}
+- **{{ scholarship.title_en }}**, {{ scholarship.field_en }} (Received in **{{ scholarship.semester_en }}**)
+{% endfor %}

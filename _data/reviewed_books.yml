@@ -1,263 +1,246 @@
-- title: "한 권으로 끝내는 실전 LLM 파인튜닝"
-  authors: "강다솔"
-  publisher: "위키북스" 
-  date: "2024년 12월"
-  link: "https://wikibook.co.kr/llm-finetuning/"
-
-- title: "딥러닝 프로젝트를 위한 허깅페이스 실전 가이드"
-  authors: "윤대희, 김동화, 송종민, 진현두"
-  publisher: "위키북스" 
-  date: "2024년 9월"
-  link: "https://wikibook.co.kr/hugging-face/"
-
-- title: "실전! 러스트로 배우는 리눅스 커널 프로그래밍"
-  authors: "김백기, 우충기"
-  publisher: "위키북스" 
-  date: "2024년 2월"
-  link: "https://wikibook.co.kr/rust-linux-kernel/"
-
-- title: "실전! 프로젝트로 배우는 딥러닝 컴퓨터비전"
-  authors: "김혜진, 왕진영"
-  publisher: "위키북스"
-  date: "2024년 1월"
-  link: "https://wikibook.co.kr/dlvision-project/"
-
-- title: "파이썬 텍스트 마이닝 바이블 2"
-  authors: "이상엽"
-  publisher: "위키북스" 
-  date: "2023년 11월"
-  link: "https://wikibook.co.kr/text-mining-bible-2/"
-
-- title: "파이썬 텍스트 마이닝 바이블 1"  
-  authors: "이상엽"
-  publisher: "위키북스"
-  date: "2023년 11월"
-  link: "https://wikibook.co.kr/text-mining-bible-1/"
-
-- title: "파이토치 트랜스포머를 활용한 자연어 처리와 컴퓨터비전 심층학습"
-  authors: "윤대희, 김동화, 송종민, 진현두"  
-  publisher: "위키북스"
-  date: "2023년 10월"
-  link: "https://wikibook.co.kr/pytorchtrf/"
-
-- title: "GPT-4, ChatGPT, 라마인덱스, 랭체인을 활용한 인공지능 프로그래밍"
-  authors: "후루카와 히데카즈"
-  publisher: "위키북스"
-  date: "2023년 9월" 
-  link: "https://wikibook.co.kr/openai-llm/"
-
-- title: "문제 해결을 위한 알고리즘 with 수학"
-  authors: "요네다 마사타카" 
-  publisher: "위키북스"
-  date: "2023년 9월"
-  link: "https://wikibook.co.kr/algorithm-math/"
-
-- title: "타입스크립트, 리액트, Next.js로 배우는 실전 웹 애플리케이션 개발"
-  authors: "테지마 타쿠야, 요시다 타케토, 타카바야시 요시키"
-  publisher: "위키북스"  
-  date: "2023년 5월"
-  link: "https://wikibook.co.kr/ts-react-nextjs/"
-
-- title: "그림과 작동 원리로 쉽게 이해하는 웹의 기초"
-  authors: "코바야시 쿄헤이, 사카모토 아키라"
-  publisher: "위키북스"
-  date: "2023년 4월" 
-  link: "https://wikibook.co.kr/web-basic/"
-
-- title: "그림과 작동 원리로 쉽게 이해하는 서버의 기초" 
-  authors: "키하시 마사히로"
-  publisher: "위키북스"
-  date: "2023년 4월"
-  link: "https://wikibook.co.kr/server-basic/"
-
-- title: "파이썬 데이터 사이언스 핸드북 (개정판)"
-  authors: "제이크 밴더플래스" 
-  publisher: "위키북스"
-  date: "2023년 3월"  
-  link: "https://wikibook.co.kr/pydsr/"
-
-- title: "프로가 되기 위한 타입스크립트 프로그래밍 입문"
-  authors: "스즈키 료타"
-  publisher: "위키북스"  
-  date: "2023년 3월"
-  link: "https://wikibook.co.kr/typescript/" 
-
-- title: "모던 웹을 위한 마이크로 프런트엔드"
-  authors: "플로리안 라플" 
-  publisher: "위키북스"
-  date: "2023년 3월" 
-  link: "https://wikibook.co.kr/micro-frontend/"
-
-- title: "파이썬 텍스트 마이닝 완벽 가이드 (개정판)"
-  authors: "박상언, 강주영"
-  publisher: "위키북스" 
-  date: "2023년 2월"
-  link: "https://wikibook.co.kr/textmining-rev/"
-
-- title: "데이터 분석가가 반드시 알아야 할 모든 것" 
-  authors: "황세웅"
-  publisher: "위키북스"
-  date: "2023년 1월"
-  link: "https://wikibook.co.kr/eda/"
-
-- title: "만들면서 배우는 러스트 프로그래밍"
-  authors: "쿠지라 히코우즈쿠에" 
-  publisher: "위키북스"  
-  date: "2023년 1월"
-  link: "https://wikibook.co.kr/rust/"
-
-- title: "모두를 위한 메타러닝"
-  authors: "정창훈, 이승현, 이동민, 장성은, 이승재, 윤승제"
-  publisher: "위키북스"
-  date: "2022년 10월"
-  link: "https://wikibook.co.kr/metalearning/"
-
-- title: "차근차근 실습하며 배우는 파이토치 딥러닝 프로그래밍"
-  authors: "아카이시 마사노리"
-  publisher: "위키북스" 
-  date: "2022년 8월"
-  link: "https://wikibook.co.kr/pytorchdl2/"
-
-- title: "솔리디티 프로그래밍 완벽 가이드"
-  authors: "조대환"
-  publisher: "위키북스" 
-  date: "2022년 8월"  
-  link: "https://wikibook.co.kr/solidity/"
-
-- title: "파이썬 머신러닝 완벽 가이드 (개정2판)"
-  authors: "권철민"  
-  publisher: "위키북스"
-  date: "2022년 4월"
-  link: "https://wikibook.co.kr/pymlrev2/" 
-
-- title: "텐서플로 2와 머신러닝으로 시작하는 자연어 처리 (개정2판)"  
-  authors: "전창욱, 최태균, 조중현, 신성진"
-  publisher: "위키북스"
-  date: "2022년 3월" 
-  link: "https://wikibook.co.kr/nlprev2/"
-
-- title: "파이썬을 이용한 딥러닝/강화학습 주식투자 (개정2판)"
-  authors: "퀀티랩"
-  publisher: "위키북스"  
-  date: "2022년 3월"
-  link: "https://wikibook.co.kr/dltradingrev2/"
-
-- title: "파이썬 텍스트 마이닝 완벽 가이드"
-  authors: "박상언, 강주영, 정석찬" 
-  publisher: "위키북스"
-  date: "2022년 2월"
-  link: "https://wikibook.co.kr/textmining/"
-
-- title: "실전! 파이토치 딥러닝 프로젝트" 
-  authors: "아쉬쉬 란잔 자"  
-  publisher: "위키북스"
-  date: "2022년 2월"
-  link: "https://wikibook.co.kr/pytorchdl/"
-
-- title: "생활코딩! 머신러닝 with 파이썬 텐서플로 (실습편)"
-  authors: "이숙번, 이고잉" 
-  publisher: "위키북스"
-  date: "2021년 12월"
-  link: "https://wikibook.co.kr/tf/"
-
-- title: "머신러닝 시스템 디자인 패턴"
-  authors: "시부이 유우스케"
-  publisher: "위키북스"
-  date: "2021년 11월"
-  link: "https://wikibook.co.kr/mlsdp/"
-
-- title: "수학으로 풀어보는 강화학습 원리와 알고리즘 (개정판)"
-  authors: "박성수"
-  publisher: "위키북스"
-  date: "2021년 9월" 
-  link: "https://wikibook.co.kr/mathrlrev/"
-
-- title: "데이터 해석학 입문" 
-  authors: "에자키 타카히로"
-  publisher: "위키북스"
-  date: "2021년 8월"
-  link: "https://wikibook.co.kr/analytics/"
-
-- title: "생활코딩! 머신러닝 실습편 with 오렌지 3"
-  authors: "이고잉, 이숙번, 오픈튜토리얼스"
-  publisher: "위키북스"
-  date: "2021년 7월"
-  link: "https://wikibook.co.kr/orange/" 
-
-- title: "생활코딩! 머신러닝 이론편"
-  authors: "이고잉, 이숙번, 오픈튜토리얼스"
-  publisher: "위키북스"
-  date: "2021년 7월"
-  link: "https://wikibook.co.kr/ml/"
-
-- title: "강화학습/심층강화학습 특강"
-  authors: "아들랑 드 폰테베"
-  publisher: "위키북스"
-  date: "2021년 6월" 
-  link: "https://wikibook.co.kr/rldrl/"
-
-- title: "돈 되는 파이썬 인공지능 프로그래밍"
-  authors: "아카이시 마사노리"
-  publisher: "위키북스"
-  date: "2021년 6월"
-  link: "https://wikibook.co.kr/aiforprofit/"
-
-- title: "C#과 파이썬을 활용한 OpenCV 4 프로그래밍 (개정판)"  
-  authors: "윤대희"
-  publisher: "위키북스"
-  date: "2021년 4월"
-  link: "https://wikibook.co.kr/opencv4-rev/"
-
-- title: "마스터링 리버스 엔지니어링"
-  authors: "레지날드 웡"
-  publisher: "위키북스" 
-  date: "2021년 4월"
-  link: "https://wikibook.co.kr/mre/"
-
-- title: "일잘러의 노션 100% 활용법"
-  authors: "제레미 강"
-  publisher: "위키북스"
-  date: "2021년 3월"
-  link: "https://wikibook.co.kr/notion/"
-
-- title: "AI 시대, 우리 아이 교육은?"
-  authors: "이윤영, 박지호"  
-  publisher: "위키북스"
-  date: "2021년 3월"
-  link: "https://wikibook.co.kr/aiedu/"
-
-- title: "세상을 여는 컴퓨터 이야기"  
-  authors: "오일석"
-  publisher: "인피니티북스"
-  date: "2021년 2월"
-  link: "https://www.infinitybooks.co.kr/product/item.php?it_id=1614649451"
-
-- title: "데이콘 경진대회 1등 솔루션" 
-  authors: "김민수1906, Context_KKP, DB분석가, 제주감귤, TNT"
-  publisher: "위키북스"
-  date: "2021년 1월"
-  link: "https://wikibook.co.kr/dacon/"
-
-- title: "카카오 아레나 데이터 경진대회 1등 노하우"
-  authors: "최규민, 김상훈, 구경훈, 김정오"
-  publisher: "위키북스"
-  date: "2021년 1월"
-  link: "https://wikibook.co.kr/kakao-arena/"
-
-- title: "직장인을 위한 데이터 분석 실무 with 파이썬 (개정판)"
-  authors: "이형석, 장남수, 전상환, 정상욱"
-  publisher: "위키북스" 
-  date: "2020년 11월" 
-  link: "https://wikibook.co.kr/pwdrev/"
-
-- title: "일 잘하는 직장인을 위한 엑셀 자동화 with 파이썬"
-  authors: "최은석"
-  publisher: "위키북스"
-  date: "2020년 11월"  
-  link: "https://wikibook.co.kr/pyexcel/"
-
-- title: "오브젝트 디자인 스타일 가이드"
-  authors: "마티아스 노박"
-  publisher: "위키북스"
-  date: "2020년 7월" 
-  link: "https://wikibook.co.kr/odsg/"
+- title: 오브젝트 디자인 스타일 가이드
+  authors: 마티아스 노박
+  publisher: 위키북스
+  date: 2020-07-22
+  link: https://wikibook.co.kr/odsg/
+- title: 일 잘하는 직장인을 위한 엑셀 자동화 with 파이썬
+  authors: 최은석
+  publisher: 위키북스
+  date: 2020-11-10
+  link: https://wikibook.co.kr/pyexcel/
+- title: 직장인을 위한 데이터 분석 실무 with 파이썬 (개정판)
+  authors: 이형석, 장남수, 전상환, 정상욱
+  publisher: 위키북스
+  date: 2020-11-12
+  link: https://wikibook.co.kr/pwdrev/
+- title: 카카오 아레나 데이터 경진대회 1등 노하우
+  authors: 최규민, 김상훈, 구경훈, 김정오
+  publisher: 위키북스
+  date: 2021-01-07
+  link: https://wikibook.co.kr/kakao-arena/
+- title: 데이콘 경진대회 1등 솔루션
+  authors: 김민수1906, Context_KKP, DB분석가, 제주감귤, TNT
+  publisher: 위키북스
+  date: 2021-01-22
+  link: https://wikibook.co.kr/dacon/
+- title: 세상을 여는 컴퓨터 이야기
+  authors: 오일석
+  publisher: 인피니티북스
+  date: 2021-02-24
+  link: https://www.infinitybooks.co.kr/product/item.php?it_id=1614649451
+- title: AI 시대, 우리 아이 교육은?
+  authors: 이윤영, 박지호
+  publisher: 위키북스
+  date: 2021-03-12
+  link: https://wikibook.co.kr/aiedu/
+- title: 일잘러의 노션 100% 활용법
+  authors: 제레미 강
+  publisher: 위키북스
+  date: 2021-03-18
+  link: https://wikibook.co.kr/notion/
+- title: 마스터링 리버스 엔지니어링
+  authors: 레지날드 웡
+  publisher: 위키북스
+  date: 2021-04-08
+  link: https://wikibook.co.kr/mre/
+- title: C#과 파이썬을 활용한 OpenCV 4 프로그래밍 (개정판)
+  authors: 윤대희
+  publisher: 위키북스
+  date: 2021-04-15
+  link: https://wikibook.co.kr/opencv4-rev/
+- title: 강화학습/심층강화학습 특강
+  authors: 아들랑 드 폰테베
+  publisher: 위키북스
+  date: 2021-06-17
+  link: https://wikibook.co.kr/rldrl/
+- title: 돈 되는 파이썬 인공지능 프로그래밍
+  authors: 아카이시 마사노리
+  publisher: 위키북스
+  date: 2021-06-17
+  link: https://wikibook.co.kr/aiforprofit/
+- title: 생활코딩! 머신러닝 실습편 with 오렌지 3
+  authors: 이고잉, 이숙번, 오픈튜토리얼스
+  publisher: 위키북스
+  date: 2021-07-16
+  link: https://wikibook.co.kr/orange/
+- title: 생활코딩! 머신러닝 이론편
+  authors: 이고잉, 이숙번, 오픈튜토리얼스
+  publisher: 위키북스
+  date: 2021-07-16
+  link: https://wikibook.co.kr/ml/
+- title: 데이터 해석학 입문
+  authors: 에자키 타카히로
+  publisher: 위키북스
+  date: 2021-08-20
+  link: https://wikibook.co.kr/analytics/
+- title: 수학으로 풀어보는 강화학습 원리와 알고리즘 (개정판)
+  authors: 박성수
+  publisher: 위키북스
+  date: 2021-09-17
+  link: https://wikibook.co.kr/mathrlrev/
+- title: 머신러닝 시스템 디자인 패턴
+  authors: 시부이 유우스케
+  publisher: 위키북스
+  date: 2021-11-24
+  link: https://wikibook.co.kr/mlsdp/
+- title: 생활코딩! 머신러닝 with 파이썬 텐서플로 (실습편)
+  authors: 이숙번, 이고잉
+  publisher: 위키북스
+  date: 2021-12-15
+  link: https://wikibook.co.kr/tf/
+- title: 실전! 파이토치 딥러닝 프로젝트
+  authors: 아쉬쉬 란잔 자
+  publisher: 위키북스
+  date: 2022-02-16
+  link: https://wikibook.co.kr/pytorchdl/
+- title: 파이썬 텍스트 마이닝 완벽 가이드
+  authors: 박상언, 강주영, 정석찬
+  publisher: 위키북스
+  date: 2022-02-18
+  link: https://wikibook.co.kr/textmining/
+- title: 텐서플로 2와 머신러닝으로 시작하는 자연어 처리 (개정2판)
+  authors: 전창욱, 최태균, 조중현, 신성진
+  publisher: 위키북스
+  date: 2022-03-24
+  link: https://wikibook.co.kr/nlprev2/
+- title: 파이썬을 이용한 딥러닝/강화학습 주식투자 (개정2판)
+  authors: 퀀티랩
+  publisher: 위키북스
+  date: 2022-03-30
+  link: https://wikibook.co.kr/dltradingrev2/
+- title: 파이썬 머신러닝 완벽 가이드 (개정2판)
+  authors: 권철민
+  publisher: 위키북스
+  date: 2022-04-21
+  link: https://wikibook.co.kr/pymlrev2/
+- title: 솔리디티 프로그래밍 완벽 가이드
+  authors: 조대환
+  publisher: 위키북스
+  date: 2022-08-02
+  link: https://wikibook.co.kr/solidity/
+- title: 차근차근 실습하며 배우는 파이토치 딥러닝 프로그래밍
+  authors: 아카이시 마사노리
+  publisher: 위키북스
+  date: 2022-08-18
+  link: https://wikibook.co.kr/pytorchdl2/
+- title: 모두를 위한 메타러닝
+  authors: 정창훈, 이승현, 이동민, 장성은, 이승재, 윤승제
+  publisher: 위키북스
+  date: 2022-10-25
+  link: https://wikibook.co.kr/metalearning/
+- title: 만들면서 배우는 러스트 프로그래밍
+  authors: 쿠지라 히코우즈쿠에
+  publisher: 위키북스
+  date: 2023-01-03
+  link: https://wikibook.co.kr/rust/
+- title: 데이터 분석가가 반드시 알아야 할 모든 것
+  authors: 황세웅
+  publisher: 위키북스
+  date: 2023-01-19
+  link: https://wikibook.co.kr/eda/
+- title: 파이썬 텍스트 마이닝 완벽 가이드 (개정판)
+  authors: 박상언, 강주영
+  publisher: 위키북스
+  date: 2023-02-28
+  link: https://wikibook.co.kr/textmining-rev/
+- title: 프로가 되기 위한 타입스크립트 프로그래밍 입문
+  authors: 스즈키 료타
+  publisher: 위키북스
+  date: 2023-03-24
+  link: https://wikibook.co.kr/typescript/
+- title: 모던 웹을 위한 마이크로 프런트엔드
+  authors: 플로리안 라플
+  publisher: 위키북스
+  date: 2023-03-24
+  link: https://wikibook.co.kr/micro-frontend/
+- title: 파이썬 데이터 사이언스 핸드북 (개정판)
+  authors: 제이크 밴더플래스
+  publisher: 위키북스
+  date: 2023-03-30
+  link: https://wikibook.co.kr/pydsr/
+- title: 그림과 작동 원리로 쉽게 이해하는 웹의 기초
+  authors: 코바야시 쿄헤이, 사카모토 아키라
+  publisher: 위키북스
+  date: 2023-04-26
+  link: https://wikibook.co.kr/web-basic/
+- title: 그림과 작동 원리로 쉽게 이해하는 서버의 기초
+  authors: 키하시 마사히로
+  publisher: 위키북스
+  date: 2023-04-26
+  link: https://wikibook.co.kr/server-basic/
+- title: GPT-4, ChatGPT, 라마인덱스, 랭체인을 활용한 인공지능 프로그래밍
+  authors: 후루카와 히데카즈
+  publisher: 위키북스
+  date: 2023-09-21
+  link: https://wikibook.co.kr/openai-llm/
+- title: 문제 해결을 위한 알고리즘 with 수학
+  authors: 요네다 마사타카
+  publisher: 위키북스
+  date: 2023-09-26
+  link: https://wikibook.co.kr/algorithm-math/
+- title: 타입스크립트, 리액트, Next.js로 배우는 실전 웹 애플리케이션 개발
+  authors: 테지마 타쿠야, 요시다 타케토, 타카바야시 요시키
+  publisher: 위키북스
+  date: 2023-10-15
+  link: https://wikibook.co.kr/ts-react-nextjs/
+- title: 파이토치 트랜스포머를 활용한 자연어 처리와 컴퓨터비전 심층학습
+  authors: 윤대희, 김동화, 송종민, 진현두
+  publisher: 위키북스
+  date: 2023-10-19
+  link: https://wikibook.co.kr/pytorchtrf/
+- title: 파이썬 텍스트 마이닝 바이블 2
+  authors: 이상엽
+  publisher: 위키북스
+  date: 2023-11-09
+  link: https://wikibook.co.kr/text-mining-bible-2/
+- title: 파이썬 텍스트 마이닝 바이블 1
+  authors: 이상엽
+  publisher: 위키북스
+  date: 2023-11-09
+  link: https://wikibook.co.kr/text-mining-bible-1/
+- title: 실전! 프로젝트로 배우는 딥러닝 컴퓨터비전
+  authors: 김혜진, 왕진영
+  publisher: 위키북스
+  date: 2024-01-12
+  link: https://wikibook.co.kr/dlvision-project/
+- title: 실전! 러스트로 배우는 리눅스 커널 프로그래밍
+  authors: 김백기, 우충기
+  publisher: 위키북스
+  date: 2024-02-28
+  link: https://wikibook.co.kr/rust-linux-kernel/
+- title: 딥러닝 프로젝트를 위한 허깅페이스 실전 가이드
+  authors: 윤대희, 김동화, 송종민, 진현두
+  publisher: 위키북스
+  date: 2024-09-26
+  link: https://wikibook.co.kr/hugging-face/
+- title: 한 권으로 끝내는 실전 LLM 파인튜닝
+  authors: 강다솔
+  publisher: 위키북스
+  date: 2024-12-17
+  link: https://wikibook.co.kr/llm-finetuning/
+- title: AI 에이전트 인 액션
+  subtitle: 설계와 구현, 배포까지, 그동안 궁금했던 AI 에이전트 개발의 모든 것
+  authors: 마이클 래넘
+  translator: 류광, 307번역랩
+  publisher: 위키북스
+  date: 2025-07-10
+  link: https://wikibook.co.kr/ai-agents/
+- title: LLM과 RAG로 구현하는 AI 애플리케이션
+  subtitle: 에이전트, 펑션콜링, Text-to-SQL, MCP까지 라마인덱스 실무 가이드
+  authors: 에디 유, 대니얼 김, 김현지
+  publisher: 위키북스
+  date: 2025-07-18
+  link: https://wikibook.co.kr/llm-rag/
+- title: 생성형 AI 인 액션
+  subtitle: 마이크로소프트 AI 전문가가 알려주는 엔터프라이즈 생성형 AI 실전 가이드
+  authors: 아미트 바리
+  translator: 이준
+  publisher: 위키북스
+  date: 2025-08-14
+  link: https://wikibook.co.kr/gai-in-action/
+- title: 실전! 프로젝트로 배우는 딥러닝 컴퓨터비전
+  subtitle: 영상분석 이론부터 엔비디아 젯슨 나노를 활용한 자율주행 실습까지
+  authors: 김혜진, 왕진영
+  publisher: 위키북스
+  date: 2025-08-19
+  link: https://wikibook.co.kr/dlvision-project-rev/
