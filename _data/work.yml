@@ -1,0 +1,35 @@
+- title: "Technical Reviewer & Proofreader"
+  meta: "(2020–Present)"
+  description: "Reviewed and proofread technical books on IT and software development."
+  show_in_cv: true
+
+- title: "Technical Translator (Freelance)"
+  meta: "(2018–Present)"
+  description: "Translated technical books on data science, AI/machine learning, and web security. (e.g., Practical Machine Learning for Computer Vision, Web Application Security, etc.)"
+  show_in_cv: true
+
+- title: "Figure Skating Instructor"
+  meta: "(2016–2021)"
+  description: "Taught figure skating to recreational skaters, including adults and children in beginner and intermediate classes."
+  show_in_cv: false
+
+- title: "Software Consultant, AM&C Inc."
+  meta: "(2007–2016)"
+  description: |
+    Specialized in Workload Automation using BMC Control-M, providing consulting and implementation services for enterprise clients.
+    Participated in System Integration (SI) projects, handling software development and serving as a project lead (PL) for certain projects.
+  show_in_cv: true
+
+- title: "IT System Operator, KB Kookmin Bank (Outsourced)"
+  meta: "(2001–2007)"
+  description: |
+    Operated IBM mainframes, Unix, and Windows servers in a rotating shift, managing batch jobs and system operations.
+    Performed computer room access control and backup tape management to ensure data security.
+  show_in_cv: true
+
+- title: "Aircraft Maintenance Technician, Republic of Korea Air Force"
+  meta: "(1996–2000)"
+  description: |
+    Performed field maintenance and structural repairs on KF-16C/D fighter jets, including airframe and skin defect repairs.
+    Carried out inspections, damage assessments, and on-site repairs to ensure aircraft structural integrity.
+  show_in_cv: true

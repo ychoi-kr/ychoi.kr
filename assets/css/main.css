@@ -28,3 +28,56 @@ nav {
 .nav-link.current {
   font-weight: bold;
 }
+
+/* 인쇄용으로만 표시할 항목을 화면에서는 숨깁니다. */
+.print-only-item {
+  display: none;
+}
+
+/* --- 링크 교체 스타일 (화면) --- */
+.link-text {
+  display: inline; /* 링크 텍스트 보이기 */
+}
+.link-url {
+  display: none; /* URL 텍스트 숨기기 */
+}
+
+/* --- 부가 링크 괄호 및 쉼표 (웹) --- */
+.extra-links-wrapper:before {
+  content: " (";
+}
+.extra-links-wrapper:after {
+  content: ")";
+}
+/* 쉼표: (GitHub, Intro) */
+.extra-link-item + .extra-link-item:before {
+  content: ", ";
+}
+
+/* --- [신규] CV 목록 통일 (웹) --- */
+
+/* 1. 목록 제목 (웹/인쇄 모두 굵게) */
+.cv-list-title {
+  font-weight: bold;
+}
+
+/* 2. 목록 설명 (제목 아래, 들여쓰기) */
+.cv-list-description {
+  display: block; /* 새 줄로 */
+  margin-left: 1.5em; /* 글머리 기호(•)와 맞추기 */
+  padding-top: 0.1em;
+}
+
+/* 3. 목록 부가 설명 (더 들여쓰기) */
+.cv-list-sub-description {
+  display: block;
+  margin-top: 0.25em;
+  font-size: 0.95em;
+  color: #555;
+}
+
+/* (웹에서는 Projects/Books의 링크 제목만 굵게 유지) */
+/* (Lectures는 .cv-list-title로 굵게 처리됨) */
+.primary-project-link .link-text {
+  font-weight: bold;
+}

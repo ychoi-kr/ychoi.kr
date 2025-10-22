@@ -1,0 +1,71 @@
+/* 인쇄 환경의 기본 스타일을 정의합니다. */
+body {
+  font-size: 11pt;
+  font-family: "KoPub바탕체", "Georgia", "바탕", serif;
+  line-height: 1.4;
+  width: auto;
+  margin: 2cm; /* A4 용지 기준 여백 */
+  background: #fff !important;
+  color: #000 !important;
+}
+
+/* 인쇄물에 필요 없는 요소(헤더, 내비게이션 등)를 숨깁니다. */
+header, nav, footer {
+  display: none;
+}
+
+/* CV 페이지의 "View complete portfolio →" 링크 숨기기 */
+a[href$="/apps/"],
+a[href$="/bots/"],
+a[href$="/books/"] {
+  display: none;
+}
+
+/* 화면에서는 숨겨졌던 인쇄 전용 항목을 보이게 합니다. */
+.print-only-item {
+  display: list-item;
+}
+
+/* 인쇄 시 (GitHub, Intro) 괄호 래퍼 전체를 숨깁니다. */
+.extra-links-wrapper {
+  display: none !important;
+}
+
+/* (대표 링크 텍스트를 검은색/밑줄 없음으로 표시) */
+
+.primary-project-link .link-text {
+  display: inline !important; 
+  font-weight: bold !important;
+}
+.primary-project-link .link-url {
+  display: none !important;
+}
+
+a, a:visited {
+  color: #000 !important;
+  text-decoration: none !important;
+}
+a:after {
+  content: none !important;
+}
+
+/* --- [신규] CV 목록 통일 (인쇄) --- */
+
+/* 1. 목록 제목 (웹/인쇄 모두 굵게) */
+.cv-list-title {
+  font-weight: bold !important;
+}
+
+/* 2. 목록 설명 (제목 아래, 들여쓰기) */
+.cv-list-description {
+  display: block; /* 새 줄로 */
+  margin-left: 1.5em;
+  padding-top: 0.1em;
+}
+
+/* 3. 목록 부가 설명 (더 들여쓰기) */
+.cv-list-sub-description {
+  display: block;
+  margin-top: 0.25em;
+  font-size: 0.95em;
+}
