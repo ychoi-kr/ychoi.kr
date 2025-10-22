@@ -225,12 +225,6 @@
   publisher: 위키북스
   date: 2025-07-10
   link: https://wikibook.co.kr/ai-agents/
-- title: LLM과 RAG로 구현하는 AI 애플리케이션
-  subtitle: 에이전트, 펑션콜링, Text-to-SQL, MCP까지 라마인덱스 실무 가이드
-  authors: 에디 유, 대니얼 김, 김현지
-  publisher: 위키북스
-  date: 2025-07-18
-  link: https://wikibook.co.kr/llm-rag/
 - title: 생성형 AI 인 액션
   subtitle: 마이크로소프트 AI 전문가가 알려주는 엔터프라이즈 생성형 AI 실전 가이드
   authors: 아미트 바리
