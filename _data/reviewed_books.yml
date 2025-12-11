@@ -218,6 +218,8 @@
   publisher: 위키북스
   date: 2024-12-17
   link: https://wikibook.co.kr/llm-finetuning/
+  awards:
+    - "2025년 세종도서 학술부문 선정"
 - title: AI 에이전트 인 액션
   subtitle: 설계와 구현, 배포까지, 그동안 궁금했던 AI 에이전트 개발의 모든 것
   authors: 마이클 래넘

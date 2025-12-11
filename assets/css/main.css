@@ -5,12 +5,14 @@ a[href^="/"] {
 
 /* app.ychoi.kr 도메인을 내부 링크로 취급 (HTTP 및 HTTPS) */
 a[href^="http://app.ychoi.kr"],
-a[href^="https://app.ychoi.kr"] {
+a[href^="https://app.ychoi.kr"]
+{
   color: blue;
   text-decoration: underline;
 }
 
-a[href^="http"]:not([href^="{{ site.url }}"]):not([href^="http://app.ychoi.kr"]):not([href^="https://app.ychoi.kr"]) {
+a[href^="http"]:not([href^="{{ site.url }}"]):not([href^="http://app.ychoi.kr"]):not([href^="https://app.ychoi.kr"])
+{
   color: green;
   text-decoration: underline dotted;
 }
@@ -80,4 +82,16 @@ nav {
 /* (Lectures는 .cv-list-title로 굵게 처리됨) */
 .primary-project-link .link-text {
   font-weight: bold;
+}
+
+.book-award-badge {
+  display: inline-block;
+  background-color: #ffd700;
+  color: #333;
+  font-size: 0.8em;
+  font-weight: bold;
+  padding: 2px 6px;
+  margin-left: 8px;
+  border-radius: 4px;
+  vertical-align: middle;
 }
