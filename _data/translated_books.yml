@@ -29,8 +29,9 @@
   link: https://wikibook.co.kr/cybersecurity-with-blockchain
   show_in_cv: false
 - title: 침투 본능, 해커의 기술
-  original_title: 'Becoming the Hacker: The Playbook for Getting Inside the Mind of
-    the Attacker'
+  original_title:
+    "Becoming the Hacker: The Playbook for Getting Inside the Mind of
+    the Attacker"
   authors: 아드리안 프루티아누
   authors_en: Adrian Pruteanu
   publisher: 위키북스
@@ -39,8 +40,9 @@
   date: 2020-05-20
   show_in_cv: false
 - title: 웹 애플리케이션 보안
-  original_title: 'Web Application Security: Exploitation and Countermeasures for
-    Modern Web Applications'
+  original_title:
+    "Web Application Security: Exploitation and Countermeasures for
+    Modern Web Applications"
   authors: 앤드루 호프먼
   authors_en: Andrew Hoffman
   publisher: 한빛미디어
@@ -115,4 +117,13 @@
   publisher_en: Wikibooks
   date: 2025-06-20
   link: /books/llm-agent/
+  show_in_cv: true
+- title: LLM 디자인 패턴
+  original_title: LLM Design Patterns
+  authors: 켄 황
+  authors_en: Ken Huang
+  publisher: 위키북스
+  publisher_en: Wikibooks
+  date: 2025-11-25
+  link: https://wikibook.co.kr/llm-design-patterns/
   show_in_cv: true
