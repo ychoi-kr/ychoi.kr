@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "이력서"
-permalink: /cv/
+permalink: /cv
 ---
 
 # Curriculum Vitae
@@ -17,6 +17,7 @@ permalink: /cv/
 </ul>
 
 ## Summary
+
 Software consultant and technical publisher (author, translator, reviewer) with nearly 30 years of experience in the IT industry. Currently, I am deeply focused on AI application development, specializing in LLMs, AI agents, and drone/robotics convergence.
 
 Proven ability to master complex technologies, demonstrated by authoring and translating numerous books on LLM API development, LangChain, and machine learning. My practical skills are primarily built through hands-on personal projects, including developing LLM-based tools, AI integrations (e.g., Claude Skills, MCP servers), and automation scripts.
@@ -24,12 +25,14 @@ Proven ability to master complex technologies, demonstrated by authoring and tra
 These applied skills have also been formally recognized in university-level AI competitions. I am actively solidifying this specialization by pursuing a BSc in Drone & Robotics Convergence.
 
 ## Education
+
 - **Seoul Cyber University**, BSc in Drone & Robotics Convergence (March 2023–Present, Expected February 2026, Early graduation in 3 years)
 - **Korea National Open University**, BSc in Computer Science (March 1999–February 2004)
 
 ## Extracurricular Activities
+
 - KCPSW (AI-Powered Drone Software Development Team), 2024
-    Developed AI-driven drone control software as part of a university-affiliated research group.
+  Developed AI-driven drone control software as part of a university-affiliated research group.
 
 ## Work Experience
 
@@ -111,10 +114,11 @@ These applied skills have also been formally recognized in university-level AI c
         </span>
       </span>
     {% endif %}
-    
+
     <span class="cv-list-description">
       {{ bot.description_en | default: bot.description }}
     </span>
+
   </li>
   {% endif %}
 {% endfor %}
@@ -123,6 +127,7 @@ These applied skills have also been formally recognized in university-level AI c
 [View complete portfolio →](/bots/)
 
 ## Publications
+
 ### Authored Books
 
 <ul id="authored-books-list">
@@ -167,10 +172,13 @@ These applied skills have also been formally recognized in university-level AI c
 </ul>
 
 ## Awards
+
 {% for award in site.data.awards %}
+
 - {{ award.title_en }}, "{{ award.event_en | default: award.field_en }}", {{ award.organization_en }}, {{ award.date_en }}
-{% endfor %}
+  {% endfor %}
 
 ## **Scholarships** {% for scholarship in site.data.scholarships %}
+
 - **{{ scholarship.title_en }}**, {{ scholarship.field_en }} (Received in **{{ scholarship.semester_en }}**)
-{% endfor %}
+  {% endfor %}

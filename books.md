@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "책"
-permalink: /books/
+permalink: /books
 ---
 
 ## 저서

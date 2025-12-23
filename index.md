@@ -19,26 +19,45 @@ permalink: /
 
 ## 📝 새 소식
 
-**📖 저서**
-{% assign authored_books_sorted = site.data.authored_books | sort: "date" | reverse %}
-{% for book in authored_books_sorted limit:1 %}
+<!-- Unified News Feed -->
 
-- {% if book.link %}**[{{ book.title }}]({{ book.link }})**{% else %}**{{ book.title }}**{% endif %}, {{ book.publisher }}, {{ book.date | date: "%Y년 %m월" | replace: " 0", " " }}{% if book.awards %}{% for award in book.awards %}<span class="book-award-badge" title="{{ award }}">🏆 {{ award }}</span>{% endfor %}{% endif %}
+{% assign events = site.data.events %}
+{% assign authored = site.data.authored_books %}
+{% assign translated = site.data.translated_books %}
+{% assign reviewed = site.data.reviewed_books %}
+
+{% assign all_news = events | concat: authored | concat: translated | concat: reviewed | sort: "date" | reverse %}
+
+{% for item in all_news %}
+{% if item.show_on_home %}
+{% if item.content %}
+{% assign title = item.title %}
+{% assign date_str = item.date | date: "%Y-%m-%d" %}
+{% assign url = "/events/#" | append: date_str %}
+{% assign label = "✨ 이벤트" %}
+{% elsif item.authors %}
+{% if item.link contains "reviewed" or item.role == "review" %}
+{% assign label = "🧐 기술검토" %}
+{% else %}
+{% assign label = "📚 번역" %}
+{% endif %}
+{% assign title = item.title %}
+{% assign url = item.link %}
+{% else %}
+{% assign label = "📖 저서" %}
+{% assign title = item.title %}
+{% assign url = item.link %}
+{% endif %}
+
+- {{ item.date | date: "%Y-%m-%d" }} <span class="news-label">[{{ label }}]</span> {% if url %}[{{ title }}]({{ url }}){% else %}{{ title }}{% endif %}
+  {% endif %}
   {% endfor %}
 
-**📚 번역서**
-{% assign translated_books_sorted = site.data.translated_books | sort: "date" | reverse %}
-{% for book in translated_books_sorted limit:2 %}
-
-- {% if book.link %}**[{{ book.title }}]({{ book.link }})**{% else %}**{{ book.title }}**{% endif %}, {{ book.authors }}, {{ book.publisher }}, {{ book.date | date: "%Y년 %m월" | replace: " 0", " " }}
-  {% endfor %}
-
-**🧐 기술 검토 및 교정 도서**
-{% assign reviewed_books_sorted = site.data.reviewed_books | sort: "date" | reverse %}
-{% for book in reviewed_books_sorted limit:3 %}
-
-- {% if book.link %}**[{{ book.title }}]({{ book.link }})**{% else %}**{{ book.title }}**{% endif %}, {{ book.authors }}, {{ book.publisher }}, {{ book.date | date: "%Y년 %m월" | replace: " 0", " " }}{% if book.awards %}{% for award in book.awards %}<span class="book-award-badge" title="{{ award }}">🏆 {{ award }}</span>{% endfor %}{% endif %}
-  {% endfor %}
-
-<br>
-[**전체 도서 목록 보기 →**](/books/)
+<style>
+.news-label {
+    font-size: 0.9em;
+    color: #666;
+    margin-right: 5px;
+    font-weight: bold;
+}
+</style>

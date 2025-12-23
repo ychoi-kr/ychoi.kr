@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "소셜 미디어"
-permalink: /social-media/
+permalink: /social-media
 ---
 
 # 소셜 미디어

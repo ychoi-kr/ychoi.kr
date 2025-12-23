@@ -1,0 +1,9 @@
+---
+layout: default
+---
+
+<h1>활동</h1>
+{% for log in site.data.events %}
+<h2 id="{{ log.date | date: '%Y-%m-%d' }}">{{ log.date | date: "%Y. %m. %d." }}</h2>
+<h3>{{ log.title }}</h3>
+{{ log.content | markdownify }} {% endfor %}

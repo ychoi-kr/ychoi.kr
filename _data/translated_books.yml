@@ -110,6 +110,7 @@
   link: /books/mlops/
   show_in_cv: true
 - title: 랭체인과 랭그래프로 구현하는 RAG・AI 에이전트 실전 입문
+  show_on_home: true
   original_title: LangChain と LangGraph による RAG・AI エージェント［実践］入門
   authors: 니시미 마사히로, 요시다 신고, 오시마 유키
   authors_en: Masahiro Nishimi, Shingo Yoshida, Yuki Oshima
@@ -119,6 +120,7 @@
   link: /books/llm-agent/
   show_in_cv: true
 - title: LLM 디자인 패턴
+  show_on_home: true
   original_title: LLM Design Patterns
   authors: 켄 황
   authors_en: Ken Huang

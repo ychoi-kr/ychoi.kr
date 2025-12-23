@@ -221,6 +221,7 @@
   awards:
     - "2025년 세종도서 학술부문 선정"
 - title: AI 에이전트 인 액션
+  show_on_home: true
   subtitle: 설계와 구현, 배포까지, 그동안 궁금했던 AI 에이전트 개발의 모든 것
   authors: 마이클 래넘
   translator: 류광, 307번역랩
@@ -228,6 +229,7 @@
   date: 2025-07-10
   link: https://wikibook.co.kr/ai-agents/
 - title: 생성형 AI 인 액션
+  show_on_home: true
   subtitle: 마이크로소프트 AI 전문가가 알려주는 엔터프라이즈 생성형 AI 실전 가이드
   authors: 아미트 바리
   translator: 이준
@@ -235,6 +237,7 @@
   date: 2025-08-14
   link: https://wikibook.co.kr/gai-in-action/
 - title: 실전! 프로젝트로 배우는 딥러닝 컴퓨터비전
+  show_on_home: true
   subtitle: 영상분석 이론부터 엔비디아 젯슨 나노를 활용한 자율주행 실습까지
   authors: 김혜진, 왕진영
   publisher: 위키북스

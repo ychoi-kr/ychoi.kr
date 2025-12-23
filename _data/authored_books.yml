@@ -24,6 +24,7 @@
   publisher: "위키북스"
   publisher_en: "Wikibooks"
   date: 2025-01-15
+  show_on_home: true
   link: "/books/llm-api-prog/"
   awards:
     - "2025년 세종도서 학술부문 선정"
