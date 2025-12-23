@@ -1,0 +1,8 @@
+---
+layout: default
+---
+
+<h1>새 소식</h1>
+{% for log in site.data.news %}
+<h2>{{ log.date | date: "%Y. %m. %d." }}</h2>
+{{ log.content | markdownify }} {% endfor %}
