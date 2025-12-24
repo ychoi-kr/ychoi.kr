@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Press"
-permalink: /press
+permalink: /press/
 ---
 
 # 미디어

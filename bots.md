@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "채팅 봇(GPTs)"
-permalink: /bots
+permalink: /bots/
 ---
 
 # 챗봇(GPTs)

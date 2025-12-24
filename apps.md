@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "앱"
-permalink: /apps
+permalink: /apps/
 ---
 
 # 앱

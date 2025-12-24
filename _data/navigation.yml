@@ -1,19 +1,19 @@
 - name: Home
   link: /
 - name: Events
-  link: /events
+  link: /events/
 - name: CV
-  link: /cv
+  link: /cv/
 - name: Books
-  link: /books
+  link: /books/
 - name: Apps
-  link: /apps
+  link: /apps/
 - name: Chatbots
-  link: /bots
+  link: /bots/
 - name: Press
-  link: /press
+  link: /press/
 - name: Social Media
-  link: /social-media
+  link: /social-media/
 - name: WikiDocs
   link: https://wikidocs.net/profile/info/book/4
 - name: GitHub

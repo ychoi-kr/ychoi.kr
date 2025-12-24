@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "이력서"
-permalink: /cv
+permalink: /cv/
 ---
 
 # Curriculum Vitae
