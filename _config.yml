@@ -6,4 +6,6 @@ exclude:
   - README.md
 
 title: YC's homepage
-# Rebuild trigger
+description: "최용(전뇌해커)의 개인 홈페이지. IT 전문 서적 기술 감수, 번역, 저술 및 AI 애플리케이션 개발 포트폴리오."
+url: "https://ychoi.kr"
+author: "최용 (Choi Yong)"
