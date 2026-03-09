@@ -1,18 +1,15 @@
-a[href^="/"] {
-  color: blue;
-  text-decoration: underline;
-}
-
-/* app.ychoi.kr 도메인을 내부 링크로 취급 (HTTP 및 HTTPS) */
+a[href^="/"],
+a[href^="http://ychoi.kr"],
+a[href^="https://ychoi.kr"],
+a[href^="http://www.ychoi.kr"],
+a[href^="https://www.ychoi.kr"],
 a[href^="http://app.ychoi.kr"],
-a[href^="https://app.ychoi.kr"]
-{
+a[href^="https://app.ychoi.kr"] {
   color: blue;
   text-decoration: underline;
 }
 
-a[href^="http"]:not([href^="{{ site.url }}"]):not([href^="http://app.ychoi.kr"]):not([href^="https://app.ychoi.kr"])
-{
+a[href^="http"]:not([href^="http://ychoi.kr"]):not([href^="https://ychoi.kr"]):not([href^="http://www.ychoi.kr"]):not([href^="https://www.ychoi.kr"]):not([href^="http://app.ychoi.kr"]):not([href^="https://app.ychoi.kr"]) {
   color: green;
   text-decoration: underline dotted;
 }
