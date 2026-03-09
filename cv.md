@@ -72,12 +72,15 @@ These applied skills have also been formally recognized in university-level AI c
 {% assign cv_projects = site.data.apps | where: "show_in_cv", true %}
 {% for app in cv_projects %}
   {% assign primary_link = app.link | default: app.github | default: app.intro_link %}
+  {% assign has_extra_links = false %}
+  {% if app.github and app.github != primary_link %}{% assign has_extra_links = true %}{% endif %}
+  {% if app.intro_link and app.intro_link != primary_link %}{% assign has_extra_links = true %}{% endif %}
   <li>
     <a href="{{ primary_link }}" class="cv-list-title primary-project-link">
       <span class="link-text">{{ app.name_en | default: app.name }}</span>
       <span class="link-url">{{ primary_link }}</span>
     </a>
-    {% if extra_links_count > 0 %}
+    {% if has_extra_links %}
       <span class="extra-links-wrapper">
         {% if app.github and app.github != primary_link %}<span class="extra-link-item"><a href="{{ app.github }}" class="extra-project-link"><span class="link-text">GitHub</span><span class="link-url">{{ app.github }}</span></a></span>{% endif %}
         {% if app.intro_link and app.intro_link != primary_link %}<span class="extra-link-item print-hide-item"><a href="{{ app.intro_link }}" class="extra-project-link"><span class="link-text">Intro</span><span class="link-url">{{ app.intro_link }}</span></a></span>{% endif %}
