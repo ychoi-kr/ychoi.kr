@@ -12,7 +12,7 @@ permalink: /cv/
   <li><strong>Name</strong>: {{ site.data.personal.name }}</li>
   <li class="print-only-item"><strong>Homepage</strong>: <a href="{{ site.data.personal.homepage }}">{{ site.data.personal.homepage }}</a></li>
   <li><strong>Email</strong>: <a href="mailto:{{ site.data.personal.email }}">{{ site.data.personal.email }}</a></li>
-  <li><strong>LinkedIn</strong>: <a href="{{ site.Dpersonal.linkedin }}">{{ site.data.personal.linkedin }}</a></li>
+  <li><strong>LinkedIn</strong>: <a href="{{ site.data.personal.linkedin }}">{{ site.data.personal.linkedin }}</a></li>
   <li><strong>Location</strong>: {{ site.data.personal.location }}</li>
 </ul>
 
@@ -182,3 +182,4 @@ These applied skills have also been formally recognized in university-level AI c
 
 - **{{ scholarship.title_en }}**, {{ scholarship.field_en }} (Received in **{{ scholarship.semester_en }}**)
   {% endfor %}
+
