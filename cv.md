@@ -110,10 +110,10 @@ These applied skills have also been formally recognized in university-level AI c
     {% if bot.intro_link %}
       <span class="extra-links-wrapper">
         <span class="extra-link-item print-hide-item">
-          (<a href="{{ bot.intro_link }}" class="extra-project-link">
+          <a href="{{ bot.intro_link }}" class="extra-project-link">
             <span class="link-text">Intro</span>
             <span class="link-url">{{ bot.intro_link }}</span>
-          </a>)
+          </a>
         </span>
       </span>
     {% endif %}
