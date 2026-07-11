@@ -22,11 +22,13 @@ Software consultant and technical publisher (author, translator, reviewer) with 
 
 Proven ability to master complex technologies, demonstrated by authoring and translating numerous books on LLM API development, LangChain, and machine learning. My practical skills are primarily built through hands-on personal projects, including developing LLM-based tools, AI integrations (e.g., Claude Skills, MCP servers), and automation scripts.
 
-These applied skills have also been formally recognized in university-level AI competitions. I am actively solidifying this specialization by pursuing a BSc in Drone & Robotics Convergence.
+These applied skills have also been formally recognized in university-level AI competitions. Having earned a BSc in Drone & Robotics Convergence, I am now further deepening this specialization through an MSc in AI Convergence Technology.
 
 ## Education
 
-- **Seoul Cyber University**, BSc in Drone & Robotics Convergence (March 2023–Present, Expected February 2026, Early graduation in 3 years)
+- **Seoul Cyber University**, MSc in AI Convergence Technology (March 2026–Present)
+- **Sejong Cyber University**, BSc in Drone & Robotics Convergence (transferred as a junior, March 2026–Present) — coursework in flight control, swarm drones, and ROS 2
+- **Seoul Cyber University**, BSc in Drone & Robotics Convergence (March 2023–February 2026, Early graduation in 3 years)
 - **Korea National Open University**, BSc in Computer Science (March 1999–February 2004)
 
 ## Extracurricular Activities
@@ -178,7 +180,7 @@ These applied skills have also been formally recognized in university-level AI c
 
 {% for award in site.data.awards %}
 
-- {{ award.title_en }}, "{{ award.event_en | default: award.field_en }}", {{ award.organization_en }}, {{ award.date_en }}
+- {{ award.title_en }}, "{{ award.event_en | default: award.field_en }}", {{ award.organization_en }}{% if award.host_en %}, {{ award.host_en }}{% endif %}, {{ award.date_en }}{% if award.link %} ([Leaderboard]({{ award.link }})){% endif %}
   {% endfor %}
 
 ## **Scholarships** {% for scholarship in site.data.scholarships %}
