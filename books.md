@@ -12,6 +12,13 @@ permalink: /books/
 - {% if book.link %}[{{ book.title }}]({{ book.link }}){% else %}{{ book.title }}{% endif %}, {{ book.publisher }}, {{ book.date | date: "%Y년 %m월" | replace: " 0", " " }}{% if book.awards %}{% for award in book.awards %}<span class="book-award-badge" title="{{ award }}">🏆 {{ award }}</span>{% endfor %}{% endif %}
   {% endfor %}
 
+## 온라인북
+
+위키독스에 공개한 온라인 책 중 대표작입니다.
+
+- [왕초보를 위한 Python](https://wikidocs.net/book/2), [전뇌해커](https://wikidocs.net/profile/info/book/4)
+- [Hermes Agent](https://wikidocs.net/book/19414), [채찍피티](https://wikidocs.net/profile/info/book/30607) (AI 생성)
+
 ## 번역서
 
 {% assign translated_books_sorted = site.data.translated_books | sort: "date" | reverse %}
