@@ -22,13 +22,13 @@ Software consultant and technical publisher (author, translator, reviewer) with 
 
 Proven ability to master complex technologies, demonstrated by authoring and translating numerous books on LLM API development, LangChain, and machine learning. My practical skills are primarily built through hands-on personal projects, including developing LLM-based tools, AI integrations (e.g., Claude Skills, MCP servers), and automation scripts.
 
-These applied skills have also been formally recognized in university-level AI competitions. Having earned a BSc in Drone & Robotics Convergence, I am now further deepening this specialization through an MSc in AI Convergence Technology.
+These applied skills have also been formally recognized in university-level AI competitions. Having earned a BEng in Drone and Robot Engineering, I am now further deepening this specialization through an MSc in AI Convergence Technology.
 
 ## Education
 
 - **Seoul Cyber University**, MSc in AI Convergence Technology (March 2026–Present)
-- **Sejong Cyber University**, BSc in Drone & Robotics Convergence (transferred as a junior, March 2026–Present) — coursework in flight control, swarm drones, and ROS 2
-- **Seoul Cyber University**, BSc in Drone & Robotics Convergence (March 2023–February 2026, Early graduation in 3 years)
+- **Sejong Cyber University**, Department of Drone and Robot Convergence (transferred as a junior, March 2026–Present) — coursework in flight control, swarm drones, and ROS 2
+- **Seoul Cyber University**, BEng in Drone and Robot Engineering (March 2023–February 2026, Early graduation in 3 years)
 - **Korea National Open University**, BSc in Computer Science (March 1999–February 2004)
 
 ## Extracurricular Activities
