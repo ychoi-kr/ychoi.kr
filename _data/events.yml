@@ -1,3 +1,11 @@
+- date: 2026-07-20
+  show_on_home: true
+  title: 2026년 대한민국학술원 우수학술도서 선정 🏆
+  content: |
+    번역서 [**《LLM 디자인 패턴》**](/books/llm-design-patterns/)이 **2026년 대한민국학술원 우수학술도서**에 선정되었습니다.
+
+    - **Link**: [선정 결과 공고 (대한민국학술원)](https://www.nas.go.kr/page/597aae5e-21c4-11ec-8e17-001e6746f4e8?ac=view&post=c71491c1-7d8a-4010-b0d8-aa962b06a109)
+
 - date: 2026-07-11
   show_on_home: true
   title: 서울사이버대학교 제5회 혁신 AI 경진대회 우수상 수상 🏆
@@ -23,11 +31,14 @@
 
 - date: 2025-10-31
   show_on_home: true
-  title: 《OpenAI, 구글 Gemini, 업스테이지 Solar API를 활용한 실전 LLM 앱 개발》 2025년 세종도서 학술부문 선정 🏆
+  title: 2025년 세종도서 학술부문 선정 🏆
   content: |
-    저서 **《OpenAI, 구글 Gemini, 업스테이지 Solar API를 활용한 실전 LLM 앱 개발》**이 **2025년 세종도서 학술부문**에 선정되었습니다.
+    저서와 번역서가 **2025년 세종도서 학술부문**에 선정되었습니다.
 
-    - **Link**: [선정 결과 공고 (KPIPA)](https://www.kpipa.or.kr/p/g1_2/1977)
+    - 저서 [**《OpenAI, 구글 Gemini, 업스테이지 Solar API를 활용한 실전 LLM 앱 개발》**](/books/llm-api-prog/)
+    - 번역서 [**《챗GPT와 랭체인을 활용한 LLM 기반 AI 앱 개발》**](/books/llm-apps/)
+
+    **Link**: [선정 결과 공고 (KPIPA)](https://www.kpipa.or.kr/p/g1_2/1977)
 
 - date: 2025-07-19
   show_on_home: true

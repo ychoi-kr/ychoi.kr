@@ -24,7 +24,7 @@ permalink: /books/
 {% assign translated_books_sorted = site.data.translated_books | sort: "date" | reverse %}
 {% for book in translated_books_sorted %}
 
-- {% if book.link %}[{{ book.title }}]({{ book.link }}){% else %}{{ book.title }}{% endif %}, {{ book.authors }}, {{ book.publisher }}, {{ book.date | date: "%Y년 %m월" | replace: " 0", " " }}
+- {% if book.link %}[{{ book.title }}]({{ book.link }}){% else %}{{ book.title }}{% endif %}, {{ book.authors }}, {{ book.publisher }}, {{ book.date | date: "%Y년 %m월" | replace: " 0", " " }}{% if book.awards %}{% for award in book.awards %}<span class="book-award-badge" title="{{ award }}">🏆 {{ award }}</span>{% endfor %}{% endif %}
   {% endfor %}
 
 ## 기술 검토 및 교정

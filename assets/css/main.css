@@ -81,6 +81,14 @@ nav {
   font-weight: bold;
 }
 
+.book-subtitle {
+  font-size: 1.1em;
+  font-weight: normal;
+  color: #555;
+  margin-top: -0.6em;
+  margin-bottom: 1.4em;
+}
+
 .book-award-badge {
   display: inline-block;
   background-color: #ffd700;

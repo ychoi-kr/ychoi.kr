@@ -92,6 +92,8 @@
   date: 2024-06-05
   link: /books/llm-apps/
   show_in_cv: true
+  awards:
+    - "2025년 세종도서 학술부문 선정"
 - title: 실전! LLM을 활용한 생성형 AI 애플리케이션 개발
   authors: 발렌티나 알토
   publisher: 위키북스
@@ -120,15 +122,19 @@
   link: /books/llm-agent/
   show_in_cv: true
 - title: LLM 디자인 패턴
+  subtitle: 견고하고 효율적인 AI 시스템 구축을 위한 실용 가이드
   show_on_home: true
   original_title: LLM Design Patterns
+  original_link: https://www.packtpub.com/en-us/product/llm-design-patterns-9781836207030
   authors: 켄 황
   authors_en: Ken Huang
   publisher: 위키북스
   publisher_en: Wikibooks
   date: 2025-11-25
-  link: https://wikibook.co.kr/llm-design-patterns/
+  link: /books/llm-design-patterns/
   show_in_cv: true
+  awards:
+    - "2026년 대한민국학술원 우수학술도서 선정"
 - title: 클로드 코드를 활용한 바이브 코딩 완벽 입문
   authors: 히라카와 토모히데
   publisher: 위키북스

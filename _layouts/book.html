@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+{% assign book = site.data.translated_books | where: "link", page.permalink | first %}
+{% if book %}
+<h1>{{ book.title }}</h1>
+{% if book.subtitle %}<p class="book-subtitle">{{ book.subtitle }}</p>{% endif %}
+{% endif %}
+
+{{ content }}
+
+{% if book.original_title %}
+<h2>원서 정보</h2>
+<ul>
+  <li>제목: {% if book.original_link %}<a href="{{ book.original_link }}">{{ book.original_title }}</a>{% else %}{{ book.original_title }}{% endif %}</li>
+  {% if book.authors_en %}<li>지은이: {{ book.authors_en }}</li>{% endif %}
+</ul>
+{% endif %}
