@@ -4,9 +4,6 @@ title: claude-code book
 permalink: /books/claude-code/
 ---
 
-- 홈페이지: [https://wikibook.co.kr/claude-code/](https://wikibook.co.kr/claude-code/)
-- 발행: 2026. 3. 12.
-
 ## 소개
 
 **단 하루 만에 시스템을 구축하는 압도적 속도의 AI 주도 개발!**

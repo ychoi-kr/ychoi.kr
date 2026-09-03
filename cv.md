@@ -158,7 +158,7 @@ These applied skills have also been formally recognized in university-level AI c
       <span class="link-text">{{ book.original_title | default: book.title }}</span>
       <span class="link-url">{{ book.link | default: '#' }}</span>
     </a>, 
-    {{ book.authors_en | default: book.authors }}, 
+    {{ book.authors_en | default: book.authors | join: "·" }}, 
     {{ book.publisher_en | default: book.publisher }}, 
     {{ book.date | date: "%B %Y" }}
   </li>

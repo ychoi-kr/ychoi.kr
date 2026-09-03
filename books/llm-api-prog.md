@@ -4,8 +4,6 @@ title: llm-api-prog book
 permalink: /books/llm-api-prog/
 ---
 
-- 홈페이지: [https://wikibook.co.kr/llm-api-prog/](https://wikibook.co.kr/llm-api-prog/)
-- 발행: 2025. 1. 15.
         
 ## 소개
 

@@ -1,6 +1,6 @@
 - title: 파이썬으로 배우는 데이터 과학 입문과 실습
   original_title: Introducing Data Science
-  authors: 데이비 실린, 아르노 메이즈맨, 모하메드 알리
+  authors: [데이비 실린, 아르노 메이즈맨, 모하메드 알리]
   authors_en: Davy Cielen, Arno Meysman, Mohamed Ali
   publisher: 위키북스
   publisher_en: Wikibooks
@@ -9,7 +9,7 @@
   show_in_cv: true
 - title: 익스플로링 라즈베리 파이
   original_title: Exploring Raspberry Pi
-  authors: 데릭 몰로이
+  authors: [데릭 몰로이]
   authors_en: Derek Molloy
   publisher: 위키북스
   publisher_en: Wikibooks
@@ -17,13 +17,13 @@
   link: https://wikibook.co.kr/exploring-raspberry-pi
   show_in_cv: true
 - title: 솔리디티 프로그래밍 에센셜
-  authors: 리테시 모디
+  authors: [리테시 모디]
   publisher: 위키북스
   date: 2018-08-17
   link: https://wikibook.co.kr/solidity-essentials
   show_in_cv: false
 - title: 블록체인으로 구현하는 사이버 보안
-  authors: 라즈니쉬 굽타
+  authors: [라즈니쉬 굽타]
   publisher: 위키북스
   date: 2018-11-22
   link: https://wikibook.co.kr/cybersecurity-with-blockchain
@@ -32,7 +32,7 @@
   original_title:
     "Becoming the Hacker: The Playbook for Getting Inside the Mind of
     the Attacker"
-  authors: 아드리안 프루티아누
+  authors: [아드리안 프루티아누]
   authors_en: Adrian Pruteanu
   publisher: 위키북스
   publisher_en: Wikibooks
@@ -43,7 +43,7 @@
   original_title:
     "Web Application Security: Exploitation and Countermeasures for
     Modern Web Applications"
-  authors: 앤드루 호프먼
+  authors: [앤드루 호프먼]
   authors_en: Andrew Hoffman
   publisher: 한빛미디어
   publisher_en: Hanbit Media
@@ -51,7 +51,7 @@
   link: https://www.hanbit.co.kr/store/books/look.php?p_code=B3641625998
   show_in_cv: true
 - title: 파이썬 데이터 클리닝 쿡북
-  authors: 마이클 워커
+  authors: [마이클 워커]
   publisher: 위키북스
   authors_en: Michael Walker
   publisher_en: Wikibooks
@@ -60,7 +60,7 @@
   show_in_cv: false
 - title: 실전! 컴퓨터비전을 위한 머신러닝
   original_title: Practical Machine Learning for Computer Vision
-  authors: 발리아파 락슈마난, 마틴 괴르너, 라이언 길라드
+  authors: [발리아파 락슈마난, 마틴 괴르너, 라이언 길라드]
   authors_en: Valliappa Lakshmanan, Martin Görner, Ryan Gillard
   publisher: 위키북스
   publisher_en: Wikibooks
@@ -71,34 +71,52 @@
   subtitle: 혁신적인 LLM 앱을 구축하기 위한 랭체인 활용법
   original_title: LangChain完全入門
   original_link: https://book.impress.co.jp/books/1123101047
-  authors: 타무라 하루카
+  authors: [타무라 하루카]
   publisher: 위키북스
   authors_en: Haruka Tamura
   publisher_en: Wikibooks
   date: 2024-02-22
   link: /books/langchain/
+  publisher_link: https://wikibook.co.kr/langchain/
+  translators: [최용]
+  series: 생성형 AI 프로그래밍 시리즈_004
+  pages: 276쪽
+  dimensions: "175*235*15mm"
+  isbn: "9791158394943"
   show_in_cv: false
 - title: OpenAI API와 파이썬으로 나만의 챗GPT 만들기
   subtitle: ChatGPT 기초부터 OpenAI API, 랭체인을 활용한 서비스 앱 제작까지
   original_title: ChatGPT API×Pythonで始める対話型AI実装入門
   original_link: https://book.impress.co.jp/books/1123101013
-  authors: 후루카와 쇼이치, 오기와라 유이
+  authors: [후루카와 쇼이치, 오기와라 유이]
   authors_en: Shoichi Furukawa, Yui Ogiwara
   publisher: 위키북스
   publisher_en: Wikibooks
   date: 2024-04-19
   link: /books/my-chatgpt/
+  publisher_link: https://wikibook.co.kr/my-chatgpt/
+  translators: [최용]
+  series: 생성형 AI 프로그래밍 시리즈_005
+  pages: 244쪽
+  dimensions: "175*235*13mm"
+  isbn: "9791158395186"
   show_in_cv: false
 - title: 챗GPT와 랭체인을 활용한 LLM 기반 AI 앱 개발
   subtitle: 랭체인 기초부터 슬랙 앱 제작과 배포까지, 실무 중심의 LLM 애플리케이션 구축
   original_title: ChatGPT/LangChainによるチャットシステム構築［実践］入門
   original_link: https://gihyo.jp/book/2023/978-4-297-13839-4
-  authors: 요시다 신고, 오시마 유키
+  authors: [요시다 신고, 오시마 유키]
   authors_en: Shingo Yoshida, Yuki Oshima
   publisher: 위키북스
   publisher_en: Wikibooks
   date: 2024-06-05
   link: /books/llm-apps/
+  publisher_link: https://wikibook.co.kr/llm-apps/
+  translators: [최용]
+  series: 생성형 AI 프로그래밍 시리즈_007
+  pages: 300쪽
+  dimensions: "175*235*15mm"
+  isbn: "9791158395230"
   show_in_cv: true
   awards:
     - title: 2025년 세종도서 학술부문 선정
@@ -107,47 +125,71 @@
   subtitle: LLM 선정부터 프롬프트 엔지니어링, RAG, 멀티모달 에이전트 구축과 미세 조정까지
   original_title: Building LLM Powered Applications
   original_link: https://www.packtpub.com/en-us/product/building-llm-powered-applications-9781835462317
-  authors: 발렌티나 알토
+  authors: [발렌티나 알토]
   publisher: 위키북스
   authors_en: Valentina Alto
   publisher_en: Wikibooks
   date: 2024-11-15
   link: /books/llm-powered-apps/
+  publisher_link: https://wikibook.co.kr/llm-powered-apps/
+  translators: [최용]
+  series: 생성형 AI 프로그래밍 시리즈_010
+  pages: 368쪽
+  dimensions: "175*235*15mm"
+  isbn: "9791158395582"
   show_in_cv: false
 - title: 머신러닝 엔지니어링 with 파이썬
   subtitle: AWS 클라우드에서 구현하는 MLOps 기반 머신러닝 모델 라이프사이클 관리
   original_title: Machine Learning Engineering with Python - Second Edition
   original_link: https://www.packtpub.com/en-us/product/machine-learning-engineering-with-python-9781837631964
-  authors: 앤드루 맥마흔
+  authors: [앤드루 맥마흔]
   publisher: 위키북스
   authors_en: Andrew McMahon
   publisher_en: Wikibooks
   date: 2025-04-24
   link: /books/mlops/
+  publisher_link: https://wikibook.co.kr/mlops/
+  translators: [최용]
+  series: 데이터 사이언스 시리즈_100
+  pages: 392쪽
+  dimensions: "188*240*16mm"
+  isbn: "9791158396046"
   show_in_cv: true
 - title: 랭체인과 랭그래프로 구현하는 RAG・AI 에이전트 실전 입문
   subtitle: RAG 설계부터 AI 에이전트 구현과 디자인 패턴까지, LLM 애플리케이션 개발자를 위한 완벽 실습서
   show_on_home: true
   original_title: LangChainとLangGraphによるRAG・AIエージェント［実践］入門
   original_link: https://gihyo.jp/book/2024/978-4-297-14530-9
-  authors: 니시미 마사히로, 요시다 신고, 오시마 유키
+  authors: [니시미 마사히로, 요시다 신고, 오시마 유키]
   authors_en: Masahiro Nishimi, Shingo Yoshida, Yuki Oshima
   publisher: 위키북스
   publisher_en: Wikibooks
   date: 2025-06-20
   link: /books/llm-agent/
+  publisher_link: https://wikibook.co.kr/llm-agent/
+  translators: [최용]
+  series: 생성형 AI 프로그래밍 시리즈_017
+  pages: 508쪽
+  dimensions: "188*240*21mm"
+  isbn: "9791158396107"
   show_in_cv: true
 - title: LLM 디자인 패턴
   subtitle: 견고하고 효율적인 AI 시스템 구축을 위한 실용 가이드
   show_on_home: true
   original_title: LLM Design Patterns
   original_link: https://www.packtpub.com/en-us/product/llm-design-patterns-9781836207030
-  authors: 켄 황
+  authors: [켄 황]
   authors_en: Ken Huang
   publisher: 위키북스
   publisher_en: Wikibooks
   date: 2025-11-25
   link: /books/llm-design-patterns/
+  publisher_link: https://wikibook.co.kr/llm-design-patterns/
+  translators: [최용]
+  series: 생성형 AI 프로그래밍 시리즈_023
+  pages: 520쪽
+  dimensions: "188*240*21mm"
+  isbn: "9791158396503"
   show_in_cv: true
   awards:
     - title: 2026년 대한민국학술원 우수학술도서 선정
@@ -156,11 +198,17 @@
   subtitle: 기본 사용법부터 MCP, 병렬 처리, 서브에이전트, 보안 설계와 응용 활용법까지
   original_title: Claude CodeによるAI駆動開発入門
   original_link: https://gihyo.jp/book/2025/978-4-297-15275-8
-  authors: 히라카와 토모히데
+  authors: [히라카와 토모히데]
   authors_en: Tomohide Hirakawa
   publisher: 위키북스
   publisher_en: Wikibooks
   date: 2026-03-12
   link: /books/claude-code/
+  publisher_link: https://wikibook.co.kr/claude-code/
+  translators: [최용]
+  series: 생성형 AI 프로그래밍 시리즈_026
+  pages: 324쪽
+  dimensions: "175*235*14mm"
+  isbn: "9791158396688"
   show_on_home: true
   show_in_cv: true

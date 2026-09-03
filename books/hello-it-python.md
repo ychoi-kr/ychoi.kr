@@ -4,12 +4,6 @@ title: hello-it-python book
 permalink: /books/hello-it-python/
 ---
 
-- 시리즈: Hello IT · HIT 시리즈  
-- 저자: 최용, 스타트코딩  
-- 출판사: 패스트캠퍼스  
-- 발행: 2022. 12. 05.  
-- ISBN: 9791197641732  
-- 절판
 
 ## 소개
 

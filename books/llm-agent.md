@@ -4,8 +4,6 @@ title: llm-agent book
 permalink: /books/llm-agent/
 ---
 
-- 홈페이지: [https://wikibook.co.kr/llm-agent/](https://wikibook.co.kr/llm-agent/)
-- 발행: 2025. 6. 20.
         
 ## 소개
 

@@ -4,8 +4,6 @@ title: llm-powered-apps book
 permalink: /books/llm-powered-apps/
 ---
 
-- 홈페이지: [https://wikibook.co.kr/llm-powered-apps/](https://wikibook.co.kr/llm-powered-apps/)
-- 발행: 2024. 11. 15.
         
 ## 소개
 

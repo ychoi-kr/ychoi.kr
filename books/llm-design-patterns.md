@@ -4,9 +4,6 @@ title: llm-design-patterns book
 permalink: /books/llm-design-patterns/
 ---
 
-- 홈페이지: [https://wikibook.co.kr/llm-design-patterns/](https://wikibook.co.kr/llm-design-patterns/)
-- 발행: 2025. 11. 25.
-
 ## 소개
 
 《LLM 디자인 패턴》은 AI 전문가를 위한 실용 가이드로, 디자인 패턴의 강력함을 활용해 견고하고 확장 가능하며 효율적인 대규모 언어 모델(LLM)을 개발할 수 있도록 돕는다. 생성형 AI, 보안, 전략 분야에서 표준과 혁신을 선도하는 세계적인 AI 전문가이자 베스트셀러 저자가 집필한 이 책은 LLM 개발의 전체 생명주기를 포괄하며, 데이터 처리·모델 훈련·평가·배포 과정에서 마주치는 문제들에 대한 재사용 가능한 아키텍처와 엔지니어링 솔루션을 제시한다.

@@ -4,8 +4,6 @@ title: my-chatgpt book
 permalink: /books/my-chatgpt/
 ---
 
-- 홈페이지: [https://wikibook.co.kr/my-chatgpt/](https://wikibook.co.kr/my-chatgpt/)
-- 발행: 2024. 4. 19.
         
 ## 소개
 

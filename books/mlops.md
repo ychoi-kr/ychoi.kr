@@ -4,8 +4,6 @@ title: mlops book
 permalink: /books/mlops/
 ---
 
-- 홈페이지: [https://wikibook.co.kr/mlops/](https://wikibook.co.kr/mlops/)
-- 발행: 2025. 4. 24.
         
 ## 소개
 

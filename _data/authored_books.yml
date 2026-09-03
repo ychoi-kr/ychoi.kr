@@ -10,20 +10,35 @@
 
 - title: "예제 중심의 Python 3"
   subtitle: 쉽고 재미있는 프로그래밍 언어
+  authors: [최용]
   publisher: "인피니티북스"
   publisher_en: "Infinity Books"
   date: 2014-02-12
+  pages: 308쪽
+  dimensions: 188×257×30mm
+  isbn: "9791185578002"
   link: /books/python3-by-examples/
 
 - title: "Hello IT 파이썬을 제대로 활용해보려고 해"
-  subtitle: 입문 + 활용
+  subtitle: 파이썬 설치부터 업무자동화, 웹페이지 제작, 데이터 크롤링까지
+  authors: [최용, 스타트코딩]
   publisher: "패스트캠퍼스"
   publisher_en: "Fast Campus"
   date: 2022-12-05
+  series: Hello IT · HIT 시리즈
+  pages: 288쪽
+  dimensions: "192*256*20mm"
+  isbn: "9791197641732"
   link: /books/hello-it-python/
 
 - title: "OpenAI, 구글 Gemini, 업스테이지 Solar API를 활용한 실전 LLM 앱 개발"
   subtitle: 프롬프트 작성부터 웹 앱 개발까지, 실습으로 배우는 LLM 서비스 개발
+  authors: [최용, 이승우]
+  publisher_link: https://wikibook.co.kr/llm-api-prog/
+  series: 생성형 AI 프로그래밍 시리즈_012
+  pages: 632쪽
+  dimensions: "175*235*26mm"
+  isbn: "9791158395667"
   publisher: "위키북스"
   publisher_en: "Wikibooks"
   date: 2025-01-15

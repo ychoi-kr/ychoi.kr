@@ -8,6 +8,11 @@ layout: default
 <h1>{{ book.title }}</h1>
 {% if book.subtitle %}<p class="book-subtitle">{{ book.subtitle }}</p>{% endif %}
 {% if book.awards %}<p class="book-awards">{% for award in book.awards %}{% if award.link %}<a class="book-award-badge" href="{{ award.link }}">🏆 {{ award.title }}</a>{% else %}<span class="book-award-badge">🏆 {{ award.title }}</span>{% endif %}{% endfor %}</p>{% endif %}
+<ul class="book-meta">
+  {% if book.authors %}<li>{{ book.authors | join: "·" }} 지음{% if book.translators %}, {{ book.translators | join: "·" }} 옮김{% endif %}</li>{% endif %}
+  {% if book.publisher %}<li>출판사: {% if book.publisher_link %}<a href="{{ book.publisher_link }}">{{ book.publisher }}</a>{% else %}{{ book.publisher }}{% endif %}</li>{% endif %}
+  {% if book.date %}<li>발행: {{ book.date | date: "%Y. %m. %d." | replace: " 0", " " }}</li>{% endif %}
+</ul>
 {% endif %}
 
 {{ content }}

@@ -4,8 +4,6 @@ title: llm-apps book
 permalink: /books/llm-apps/
 ---
 
-- 홈페이지: [https://wikibook.co.kr/llm-apps/](https://wikibook.co.kr/llm-apps/)
-- 발행: 2024. 6. 5.
         
 ## 소개
 
