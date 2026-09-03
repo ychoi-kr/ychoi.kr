@@ -180,7 +180,7 @@ These applied skills have also been formally recognized in university-level AI c
 
 {% for award in site.data.awards %}
 
-- {{ award.title_en }}, "{{ award.event_en | default: award.field_en }}", {{ award.organization_en }}{% if award.host_en %}, {{ award.host_en }}{% endif %}, {{ award.date_en }}{% if award.link %} ([Leaderboard]({{ award.link }})){% endif %}
+- {{ award.title_en }}, "{{ award.event_en | default: award.field_en }}", {{ award.organization_en }}{% if award.host_en %}, {{ award.host_en }}{% endif %}, {{ award.date_en }}
   {% endfor %}
 
 ## **Scholarships** {% for scholarship in site.data.scholarships %}

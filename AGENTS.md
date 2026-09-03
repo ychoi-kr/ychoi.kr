@@ -88,6 +88,19 @@ Draws on `personal.yml`, `work.yml`, `lectures.yml`, `apps.yml`, `gpts.yml`,
 `authored_books.yml`, `translated_books.yml`, `awards.yml`, and `scholarships.yml`.
 `show_in_cv: true` controls inclusion.
 
+Two things here look like bugs but are deliberate. Leave them alone.
+
+- **Authored books are not filtered by `show_in_cv`.** Every entry in
+  `authored_books.yml` appears, because there are few of them and they matter more.
+  Translations are filtered.
+- **Titles are not translated into English.** Authored books show their Korean titles,
+  and translations of Japanese originals show the Japanese `original_title`. Inventing
+  an English title would fabricate a book that does not exist under that name.
+
+`personal.yml`'s homepage is marked `print-only-item`: hidden on the web CV, shown in
+the PDF. The web CV is already served from that address, so it would be redundant
+there but is needed once the PDF leaves the site.
+
 The CV renders deliberately differently on screen and in print, and some presentation
 logic is split between markup and CSS. CV changes must be checked against `cv.md`,
 `assets/css/main.css`, and `assets/css/print.css` together. `print.css` exists for
