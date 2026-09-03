@@ -1,10 +1,8 @@
 ---
-layout: default
+layout: book
 title: llm-api-prog book
 permalink: /books/llm-api-prog/
 ---
-
-# OpenAI, 구글 Gemini, 업스테이지 Solar API를 활용한 실전 LLM 앱 개발
 
 - 홈페이지: [https://wikibook.co.kr/llm-api-prog/](https://wikibook.co.kr/llm-api-prog/)
 - 발행: 2025. 1. 15.

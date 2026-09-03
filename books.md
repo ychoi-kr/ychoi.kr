@@ -9,7 +9,7 @@ permalink: /books/
 {% assign authored_books_sorted = site.data.authored_books | sort: "date" | reverse %}
 {% for book in authored_books_sorted %}
 
-- {% if book.link %}[{{ book.title }}]({{ book.link }}){% else %}{{ book.title }}{% endif %}, {{ book.publisher }}, {{ book.date | date: "%Y년 %m월" | replace: " 0", " " }}{% if book.awards %}{% for award in book.awards %}<span class="book-award-badge" title="{{ award }}">🏆 {{ award }}</span>{% endfor %}{% endif %}
+- {% if book.link %}[{{ book.title }}]({{ book.link }}){% else %}{{ book.title }}{% endif %}, {{ book.publisher }}, {{ book.date | date: "%Y년 %m월" | replace: " 0", " " }}{% if book.awards %}{% for award in book.awards %}{% if award.link %}<a class="book-award-badge" href="{{ award.link }}">🏆 {{ award.title }}</a>{% else %}<span class="book-award-badge">🏆 {{ award.title }}</span>{% endif %}{% endfor %}{% endif %}
   {% endfor %}
 
 ## 온라인북
@@ -24,7 +24,7 @@ permalink: /books/
 {% assign translated_books_sorted = site.data.translated_books | sort: "date" | reverse %}
 {% for book in translated_books_sorted %}
 
-- {% if book.link %}[{{ book.title }}]({{ book.link }}){% else %}{{ book.title }}{% endif %}, {{ book.authors }}, {{ book.publisher }}, {{ book.date | date: "%Y년 %m월" | replace: " 0", " " }}{% if book.awards %}{% for award in book.awards %}<span class="book-award-badge" title="{{ award }}">🏆 {{ award }}</span>{% endfor %}{% endif %}
+- {% if book.link %}[{{ book.title }}]({{ book.link }}){% else %}{{ book.title }}{% endif %}, {{ book.authors }}, {{ book.publisher }}, {{ book.date | date: "%Y년 %m월" | replace: " 0", " " }}{% if book.awards %}{% for award in book.awards %}{% if award.link %}<a class="book-award-badge" href="{{ award.link }}">🏆 {{ award.title }}</a>{% else %}<span class="book-award-badge">🏆 {{ award.title }}</span>{% endif %}{% endfor %}{% endif %}
   {% endfor %}
 
 ## 기술 검토 및 교정
@@ -32,5 +32,5 @@ permalink: /books/
 {% assign reviewed_books_sorted = site.data.reviewed_books | sort: "date" | reverse %}
 {% for book in reviewed_books_sorted %}
 
-- {% if book.link %}[{{ book.title }}]({{ book.link }}){% else %}{{ book.title }}{% endif %}, {{ book.authors }}, {{ book.publisher }}, {{ book.date | date: "%Y년 %m월" | replace: " 0", " " }}{% if book.awards %}{% for award in book.awards %}<span class="book-award-badge" title="{{ award }}">🏆 {{ award }}</span>{% endfor %}{% endif %}
+- {% if book.link %}[{{ book.title }}]({{ book.link }}){% else %}{{ book.title }}{% endif %}, {{ book.authors }}, {{ book.publisher }}, {{ book.date | date: "%Y년 %m월" | replace: " 0", " " }}{% if book.awards %}{% for award in book.awards %}{% if award.link %}<a class="book-award-badge" href="{{ award.link }}">🏆 {{ award.title }}</a>{% else %}<span class="book-award-badge">🏆 {{ award.title }}</span>{% endif %}{% endfor %}{% endif %}
   {% endfor %}

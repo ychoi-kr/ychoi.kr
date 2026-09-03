@@ -2,10 +2,12 @@
 layout: default
 ---
 
-{% assign book = site.data.translated_books | where: "link", page.permalink | first %}
+{% assign book_entries = site.data.authored_books | concat: site.data.translated_books %}
+{% assign book = book_entries | where: "link", page.permalink | first %}
 {% if book %}
 <h1>{{ book.title }}</h1>
 {% if book.subtitle %}<p class="book-subtitle">{{ book.subtitle }}</p>{% endif %}
+{% if book.awards %}<p class="book-awards">{% for award in book.awards %}{% if award.link %}<a class="book-award-badge" href="{{ award.link }}">🏆 {{ award.title }}</a>{% else %}<span class="book-award-badge">🏆 {{ award.title }}</span>{% endif %}{% endfor %}</p>{% endif %}
 {% endif %}
 
 {{ content }}

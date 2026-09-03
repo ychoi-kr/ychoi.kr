@@ -101,7 +101,8 @@
   link: /books/llm-apps/
   show_in_cv: true
   awards:
-    - "2025년 세종도서 학술부문 선정"
+    - title: 2025년 세종도서 학술부문 선정
+      link: https://www.kpipa.or.kr/p/g1_2/1977
 - title: 실전! LLM을 활용한 생성형 AI 애플리케이션 개발
   subtitle: LLM 선정부터 프롬프트 엔지니어링, RAG, 멀티모달 에이전트 구축과 미세 조정까지
   original_title: Building LLM Powered Applications
@@ -149,7 +150,8 @@
   link: /books/llm-design-patterns/
   show_in_cv: true
   awards:
-    - "2026년 대한민국학술원 우수학술도서 선정"
+    - title: 2026년 대한민국학술원 우수학술도서 선정
+      link: https://www.nas.go.kr/page/597aae5e-21c4-11ec-8e17-001e6746f4e8?ac=view&post=c71491c1-7d8a-4010-b0d8-aa962b06a109
 - title: 클로드 코드를 활용한 바이브 코딩 완벽 입문
   subtitle: 기본 사용법부터 MCP, 병렬 처리, 서브에이전트, 보안 설계와 응용 활용법까지
   original_title: Claude CodeによるAI駆動開発入門

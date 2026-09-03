@@ -9,22 +9,26 @@
   date: 2011-11-21
 
 - title: "예제 중심의 Python 3"
+  subtitle: 쉽고 재미있는 프로그래밍 언어
   publisher: "인피니티북스"
   publisher_en: "Infinity Books"
   date: 2014-02-12
   link: /books/python3-by-examples/
 
 - title: "Hello IT 파이썬을 제대로 활용해보려고 해"
+  subtitle: 입문 + 활용
   publisher: "패스트캠퍼스"
   publisher_en: "Fast Campus"
   date: 2022-12-05
   link: /books/hello-it-python/
 
 - title: "OpenAI, 구글 Gemini, 업스테이지 Solar API를 활용한 실전 LLM 앱 개발"
+  subtitle: 프롬프트 작성부터 웹 앱 개발까지, 실습으로 배우는 LLM 서비스 개발
   publisher: "위키북스"
   publisher_en: "Wikibooks"
   date: 2025-01-15
   show_on_home: false
   link: "/books/llm-api-prog/"
   awards:
-    - "2025년 세종도서 학술부문 선정"
+    - title: 2025년 세종도서 학술부문 선정
+      link: https://www.kpipa.or.kr/p/g1_2/1977

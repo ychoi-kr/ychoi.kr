@@ -100,3 +100,18 @@ nav {
   border-radius: 4px;
   vertical-align: middle;
 }
+
+a.book-award-badge {
+  text-decoration: none;
+  color: #333;
+}
+
+.book-awards {
+  margin-top: -0.4em;
+  margin-bottom: 1.4em;
+}
+
+.book-awards .book-award-badge {
+  margin-left: 0;
+  margin-right: 8px;
+}

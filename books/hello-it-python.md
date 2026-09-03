@@ -1,10 +1,8 @@
 ---
-layout: default
+layout: book
 title: hello-it-python book
 permalink: /books/hello-it-python/
 ---
-
-# 파이썬을 제대로 활용해보려고 해 (입문 + 활용)
 
 - 시리즈: Hello IT · HIT 시리즈  
 - 저자: 최용, 스타트코딩  

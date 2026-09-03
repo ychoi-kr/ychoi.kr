@@ -189,7 +189,8 @@
   date: 2023-10-19
   link: https://wikibook.co.kr/pytorchtrf/
   awards:
-    - "2024년 대한민국학술원 우수학술도서 선정"
+    - title: 2024년 대한민국학술원 우수학술도서 선정
+      link: https://www.nas.go.kr/page/597aae5e-21c4-11ec-8e17-001e6746f4e8?ac=view&post=96cf838d-19ca-45b2-97a2-3501b42a6aae
 - title: 파이썬 텍스트 마이닝 바이블 2
   authors: 이상엽
   publisher: 위키북스
@@ -221,7 +222,8 @@
   date: 2024-12-17
   link: https://wikibook.co.kr/llm-finetuning/
   awards:
-    - "2025년 세종도서 학술부문 선정"
+    - title: 2025년 세종도서 학술부문 선정
+      link: https://www.kpipa.or.kr/p/g1_2/1977
 - title: AI 에이전트 인 액션
   subtitle: 설계와 구현, 배포까지, 그동안 궁금했던 AI 에이전트 개발의 모든 것
   authors: 마이클 래넘
@@ -237,7 +239,8 @@
   date: 2025-08-14
   link: https://wikibook.co.kr/gai-in-action/
   awards:
-    - "2026년 세종도서 학술부문 선정"
+    - title: 2026년 세종도서 학술부문 선정
+      link: https://www.kpipa.or.kr/p/g1_2/2146
 - title: 실전! 프로젝트로 배우는 딥러닝 컴퓨터비전
   subtitle: 영상분석 이론부터 엔비디아 젯슨 나노를 활용한 자율주행 실습까지
   authors: 김혜진, 왕진영

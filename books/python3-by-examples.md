@@ -1,10 +1,8 @@
 ---
-layout: default
+layout: book
 title: python3-by-examples book
 permalink: /books/python3-by-examples/
 ---
-
-# 예제 중심의 Python 3 쉽고 재미있는 프로그래밍 언어
 
 - **저자**: 최용
 - **출판사**: 인피니티북스
