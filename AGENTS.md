@@ -40,7 +40,8 @@ running while working, so check before offering to build anything.
 - `_data/events.yml`: events and activity items
 - `_data/apps.yml`, `_data/gpts.yml`: apps, projects, GPT entries
 - `_data/work.yml`, `_data/lectures.yml`, `_data/personal.yml`: CV source data
-- `_data/awards.yml`, `_data/scholarships.yml`: CV awards and scholarships
+- `_data/awards.yml`, `_data/scholarships.yml`, `_data/certifications.yml`: CV awards,
+  scholarships, and certifications
 - `_data/press.yml`: media mentions, rendered by `press.md`
 - `_data/navigation.yml`: site navigation. A page absent from this file is still
   built and reachable by URL — just unlinked. Being unlinked can be deliberate.
@@ -85,8 +86,14 @@ all of that comes from the data.
 ### CV — `cv.md`
 
 Draws on `personal.yml`, `work.yml`, `lectures.yml`, `apps.yml`, `gpts.yml`,
-`authored_books.yml`, `translated_books.yml`, `awards.yml`, and `scholarships.yml`.
-`show_in_cv: true` controls inclusion.
+`authored_books.yml`, `translated_books.yml`, `awards.yml`, `scholarships.yml`, and
+`certifications.yml`. `show_in_cv: true` controls inclusion for work, apps, GPTs, and
+translations; the other files are rendered in full.
+
+Entries carry paired Korean and English fields (`title`/`title_en`,
+`issuer`/`issuer_en`, `date`/`date_en`), and the CV renders the `_en` side. A
+certification may add an optional `note_en`, appended after an em dash — use it only
+for something the certificate or an equivalent record actually states.
 
 Two things here look like bugs but are deliberate. Leave them alone.
 
