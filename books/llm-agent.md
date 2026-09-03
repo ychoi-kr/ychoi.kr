@@ -1,10 +1,8 @@
 ---
-layout: default
+layout: book
 title: llm-agent book
 permalink: /books/llm-agent/
 ---
-
-# 랭체인과 랭그래프로 구현하는 RAG・AI 에이전트 실전 입문
 
 - 홈페이지: [https://wikibook.co.kr/llm-agent/](https://wikibook.co.kr/llm-agent/)
 - 발행: 2025. 6. 20.

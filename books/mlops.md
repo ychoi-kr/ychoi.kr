@@ -1,10 +1,8 @@
 ---
-layout: default
+layout: book
 title: mlops book
 permalink: /books/mlops/
 ---
-
-# 머신러닝 엔지니어링 with 파이썬
 
 - 홈페이지: [https://wikibook.co.kr/mlops/](https://wikibook.co.kr/mlops/)
 - 발행: 2025. 4. 24.

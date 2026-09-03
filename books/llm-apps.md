@@ -1,10 +1,8 @@
 ---
-layout: default
-title: langchain book
+layout: book
+title: llm-apps book
 permalink: /books/llm-apps/
 ---
-
-# 랭체인 완벽 입문
 
 - 홈페이지: [https://wikibook.co.kr/llm-apps/](https://wikibook.co.kr/llm-apps/)
 - 발행: 2024. 6. 5.

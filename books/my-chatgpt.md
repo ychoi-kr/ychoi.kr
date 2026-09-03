@@ -1,10 +1,8 @@
 ---
-layout: default
-title: langchain book
+layout: book
+title: my-chatgpt book
 permalink: /books/my-chatgpt/
 ---
-
-# OpenAI API와 파이썬으로 나만의 챗GPT 만들기
 
 - 홈페이지: [https://wikibook.co.kr/my-chatgpt/](https://wikibook.co.kr/my-chatgpt/)
 - 발행: 2024. 4. 19.

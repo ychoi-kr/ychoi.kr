@@ -1,10 +1,8 @@
 ---
-layout: default
+layout: book
 title: llm-powered-apps book
 permalink: /books/llm-powered-apps/
 ---
-
-# 실전! LLM을 활용한 생성형 AI 애플리케이션 개발
 
 - 홈페이지: [https://wikibook.co.kr/llm-powered-apps/](https://wikibook.co.kr/llm-powered-apps/)
 - 발행: 2024. 11. 15.
