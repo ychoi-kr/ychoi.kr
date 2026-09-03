@@ -24,9 +24,8 @@ permalink: /
 {% assign events = site.data.events %}
 {% assign authored = site.data.authored_books %}
 {% assign translated = site.data.translated_books %}
-{% assign reviewed = site.data.reviewed_books %}
 
-{% assign all_news = events | concat: authored | concat: translated | concat: reviewed | sort: "date" | reverse %}
+{% assign all_news = events | concat: authored | concat: translated | sort: "date" | reverse %}
 
 {% for item in all_news %}
 {% if item.show_on_home %}
@@ -36,15 +35,11 @@ permalink: /
 {% assign url = "/events/#" | append: date_str %}
 {% assign label = "✨ 이벤트" %}
 {% elsif item.authors %}
-{% if item.link contains "reviewed" or item.role == "review" %}
-{% assign label = "🧐 기술검토" %}
-{% else %}
-{% assign label = "📚 번역" %}
-{% endif %}
+{% assign label = "📚 번역서 출간" %}
 {% assign title = item.title %}
 {% assign url = item.link %}
 {% else %}
-{% assign label = "📖 저서" %}
+{% assign label = "📖 저서 출간" %}
 {% assign title = item.title %}
 {% assign url = item.link %}
 {% endif %}
