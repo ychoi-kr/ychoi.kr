@@ -1,72 +1,173 @@
 # AGENTS.md
 
+The single source of project instructions for this repository. `CLAUDE.md` only
+points here; there is no second copy of any of this.
+
 ## Purpose
 
-This repository is a Jekyll-based personal site. When working here, do not look only at page-level Markdown files. Always inspect `_data` and the relevant Liquid templates together.
+This repository is a Jekyll-based personal site (https://ychoi.kr). The source of
+truth is `_data/*.yml`, not the page Markdown files. Page files are thin templates
+that pull from `_data` through Liquid, and several pages reuse the same data.
 
-## Core Working Rules
+Never read a page Markdown file on its own. Inspect `_data` and the relevant Liquid
+templates together.
 
-- For content updates, look in `_data/*.yml` first.
-- Page output order may come from template logic such as `sort`, `where`, `concat`, and `reverse`, not from the physical order inside a data file.
-- A successful `bundle exec jekyll build` does not guarantee correct output. Check the rendered files in `_site`.
-- Preserve UTF-8 without BOM when writing Markdown, YAML, HTML, or CSS files from PowerShell.
-- Do not put Liquid expressions such as `{{ ... }}` into static CSS files.
+## Commands
+
+```bash
+bundle install              # install Ruby gem dependencies (first time)
+bundle exec jekyll serve    # local dev server with live reload at http://localhost:4000
+bundle exec jekyll build    # build the static site into _site/
+```
+
+There is no test suite, linter, or JS build step. "Verification" means building and
+reading the rendered HTML in `_site/`. The maintainer often keeps `jekyll serve`
+running while working, so check before offering to build anything.
+
+## Repository Structure
+
+- `_data`: source content data
+- `_layouts`: `default`, `event`, `book`
+- `_includes`: reusable fragments — `head`, `navigation`, `seo`
+- `assets/css`: `main.css` (screen) and `print.css`
+- `books`, `events`: section-specific page content
+
+### Data files
+
+- `_data/authored_books.yml`: authored books
+- `_data/translated_books.yml`: translated books
+- `_data/reviewed_books.yml`: technical review and proofreading work
+- `_data/events.yml`: events and activity items
+- `_data/apps.yml`, `_data/gpts.yml`: apps, projects, GPT entries
+- `_data/work.yml`, `_data/lectures.yml`, `_data/personal.yml`: CV source data
+- `_data/awards.yml`, `_data/scholarships.yml`: CV awards and scholarships
+- `_data/press.yml`: media mentions, rendered by `press.md`
+- `_data/navigation.yml`: site navigation. A page absent from this file is still
+  built and reachable by URL — just unlinked. Being unlinked can be deliberate.
+
+## Page Data Flow
+
+### Home — `index.md`
+
+Introduction plus a unified news feed. Combines `events.yml`, `authored_books.yml`,
+`translated_books.yml`, and `reviewed_books.yml` with `concat`, sorts by `date`, and
+reverses for newest-first output. `show_on_home: true` controls inclusion.
+
+### Books — `books.md`
+
+Lists authored books, translations, and technical review work as three sections, each
+using `sort: "date" | reverse`. Award badges render from the `awards` list on a book
+entry; all three sections support them.
+
+### Book detail pages — `books/<slug>.md`
+
+Individual pages with `permalink: /books/<slug>/` and `layout: book`, sourced from
+`_data/translated_books.yml`.
+
+`_layouts/book.html` finds its entry by matching `page.permalink` against the entry's
+`link`, then renders `<h1>` from `title`, a `.book-subtitle` line from `subtitle`, and
+an 원서 정보 section from `original_title` and `original_link`. The Markdown file
+therefore carries no heading of its own — only the body: the `홈페이지`/`발행` list,
+`## 소개`, and the detail image.
+
+### CV — `cv.md`
+
+Draws on `personal.yml`, `work.yml`, `lectures.yml`, `apps.yml`, `gpts.yml`,
+`authored_books.yml`, `translated_books.yml`, `awards.yml`, and `scholarships.yml`.
+`show_in_cv: true` controls inclusion.
+
+The CV renders deliberately differently on screen and in print, and some presentation
+logic is split between markup and CSS. CV changes must be checked against `cv.md`,
+`assets/css/main.css`, and `assets/css/print.css` together. `print.css` exists for
+producing the CV as a PDF and nothing else — pages other than the CV need no print
+styling.
+
+## Critical Gotchas
+
+- **Rendered order is not file order.** Templates sort with `sort: "date" | reverse`,
+  `concat`, `where`. Keep YAML files in chronological order for human readability and
+  let templates decide display order. Never reorder YAML to change what the page shows.
+- **Visibility flags.** `show_on_home: true` for the homepage feed, `show_in_cv: true`
+  for the CV. Adding data is not enough.
+- **A green build does not mean correct output.** Jekyll tolerates Liquid mistakes
+  silently. Inspect the rendered file in `_site/`.
+- **A book page with a mismatched permalink loses its title.** If `page.permalink` and
+  the data entry's `link` differ by even a trailing slash, the page still builds —
+  silently, with no heading at all.
+- **UTF-8 without BOM is mandatory.** A BOM in Markdown front matter makes Jekyll copy
+  the file as a static asset, so a raw `.md` appears in `_site/` instead of a rendered
+  page. If that happens, check for a BOM or broken front matter first.
+- **No Liquid in static CSS.** `{{ ... }}` in `assets/css/*` is not processed and
+  breaks styles.
 
 ## Editing Method
 
-- Use whichever targeted edit mechanism your tooling provides, and prefer a surgical edit over rewriting a whole file.
-- Whatever the mechanism, it must preserve UTF-8 without BOM. Shell redirection and several PowerShell cmdlets do not.
-- If you had to fall back to a shell command instead of a dedicated edit tool, re-open the file afterwards and verify the exact edited lines.
-- Be especially careful with Markdown front matter. If a BOM is introduced, Jekyll may copy the file as a static asset instead of rendering it as a page.
+- Use whichever targeted edit mechanism your tooling provides, and prefer a surgical
+  edit over rewriting a whole file.
+- Whatever the mechanism, it must preserve UTF-8 without BOM. Shell redirection and
+  several PowerShell cmdlets do not.
+- If you had to fall back to a shell command instead of a dedicated edit tool, re-open
+  the file afterwards and verify the exact edited lines.
+- Do not rely on an insertion anchor alone when modifying YAML automatically. Re-check
+  the final position in the file.
 
 ## Repeated Task Guide
 
-### Updating book data from a publisher link
+### Adding a book to the data
 
 1. Classify the book first:
-   - Authored book: `_data/authored_books.yml`
+   - Authored: `_data/authored_books.yml`
    - Translation: `_data/translated_books.yml`
    - Technical review or proofreading: `_data/reviewed_books.yml`
-2. Collect the metadata from the publisher page whenever possible:
-   - Title
-   - Author or original author
-   - Publisher
-   - Publication date
-   - Canonical link
-3. Respect the file ordering convention when adding a new entry.
-   - In this repository, data files are easier to maintain when they stay in chronological order.
-   - Display order is handled separately in templates with `sort: "date" | reverse`.
-4. Add `show_on_home: true` if the new book should appear on the homepage feed.
-5. Add `show_in_cv: true` if the new book should appear on the CV page.
-6. After editing, verify all relevant outputs:
-   - `bundle exec jekyll build`
-   - `_site/index.html`
-   - `_site/books/index.html`
-   - `_site/cv/index.html` when CV visibility matters
+2. Collect metadata from the publisher page: title, subtitle, author or original
+   author, publisher, publication date, canonical link.
+3. Insert in chronological position. Display order is a template concern.
+4. Set `show_on_home` and `show_in_cv` deliberately.
+5. Check the rendered `_site/index.html`, `_site/books/index.html`, and
+   `_site/cv/index.html` as relevant.
+
+### Award selections
+
+When a book is chosen for 세종도서, 대한민국학술원 우수학술도서, or similar:
+
+- Authored books and translations get an `awards` entry **and** an event in
+  `_data/events.yml` with `show_on_home: true`.
+- Technical review and proofreading work gets the `awards` label only. No home feed
+  event.
+- If one announcement covers several books, write a single event and list them in it.
 
 ### Creating a book detail page
 
-Book pages live at `books/<slug>.md` with `permalink: /books/<slug>/` and `layout: book`.
-
-**The title is not written in the Markdown.** `_layouts/book.html` looks up `site.data.translated_books` by `page.permalink` and renders `<h1>` and `.book-subtitle` from the data entry, then appends the 원서 정보 section. A page whose `permalink` does not exactly match a data `link` renders with no title at all, and the build still succeeds — so always open the rendered page.
-
-Body order: metadata list (`홈페이지`, `발행`), `## 소개`, publisher copy, any `★ ... ★` lists, then `**도서 상세 이미지**` and the image.
+Follow the structure described under **Book detail pages** above: the title is not
+written in the Markdown.
 
 #### Fetching publisher content
 
-- Fetch the raw HTML and read it directly: `Invoke-WebRequest -UseBasicParsing`, then decode `RawContentStream` as UTF-8. Subtitle, blurb, bullet lists, and example-code GitHub links are all in the static HTML — none of it is loaded by JavaScript.
-- `<meta property="og:title">` holds `제목: 부제`. It is the most reliable source for `subtitle`.
-- Do not use WebFetch for copy that must be verbatim; it passes the page through a summarizing model and rewrites sentences even when asked to quote.
-- Tavily Extract (`TAVILY_API_KEY`) returns readable Markdown but is lossy: `extract_depth: "basic"` has silently dropped the subtitle and bullet lists. It is a convenience, not the source of truth. In PowerShell 5.1, `Invoke-RestMethod` mangles its UTF-8 — use `Invoke-WebRequest` and decode the stream manually.
-- Detail image: `https://wikibook.co.kr/images/detail/<name>_Detail.jpg`. The remote filename may not match the slug (`claude-code` → `claude_code_Detail.jpg`). Save it locally as `assets/images/books/<slug>_Detail.jpg`.
+- Fetch the raw HTML and read it directly: `Invoke-WebRequest -UseBasicParsing`, then
+  decode `RawContentStream` as UTF-8. Subtitle, blurb, bullet lists, and example-code
+  GitHub links are all in the static HTML — none of it is loaded by JavaScript.
+- `<meta property="og:title">` holds `제목: 부제`. It is the most reliable source for
+  `subtitle`.
+- Do not use a summarizing fetch tool for copy that must be verbatim; such tools
+  rewrite sentences even when asked to quote. Extraction services are lossy too and
+  have silently dropped whole sections. They are a convenience, not the source.
+- In PowerShell 5.1, `Invoke-RestMethod` mangles UTF-8 responses — use
+  `Invoke-WebRequest` and decode the stream manually.
+- Detail image: `https://wikibook.co.kr/images/detail/<name>_Detail.jpg`. The remote
+  filename may not match the slug (`claude-code` → `claude_code_Detail.jpg`). Save it
+  locally as `assets/images/books/<slug>_Detail.jpg`.
 
 #### Finding the original edition
 
-- Publisher pages do not state the original title. Check the example-code GitHub repository linked on the page: several READMEs open with `원서 제목: ...`.
-- If that repository only documents the sample app, search by author and subject, then confirm on the original publisher's own page. Comparing page counts against the Korean edition is a useful cross-check.
-- Record `original_title` and `original_link` only. The 원서 정보 section renders the title and its link, nothing else.
+- Publisher pages do not state the original title. Check the example-code GitHub
+  repository linked on the page: several READMEs open with `원서 제목: ...`.
+- If that repository only documents the sample app, search by author and subject, then
+  confirm on the original publisher's own page. Comparing page counts against the
+  Korean edition is a useful cross-check.
+- Record `original_title` and `original_link` only. The 원서 정보 section renders the
+  title and its link, nothing else.
 
-#### Field ownership
+### Field ownership
 
 | Field | Consumed by |
 | --- | --- |
@@ -76,13 +177,21 @@ Body order: metadata list (`홈페이지`, `발행`), `## 소개`, publisher cop
 | `awards` | award badges on `books.md` |
 | `link` | `books.md` and event entries; must equal the page `permalink` |
 
-Never invent an `authors_en` value. It must come from a stated source such as the colophon or furigana — do not back-transliterate from the Korean rendering of a Japanese or English name. Use given-name-first order, matching the existing entries.
+Never invent an `authors_en` value. It must come from a stated source such as the
+colophon or furigana — do not back-transliterate from the Korean rendering of a
+Japanese or English name. Use given-name-first order, matching the existing entries.
 
 ## Important Cautions
 
-- Do not rely only on an insertion anchor when modifying YAML files automatically. Re-check the final position in the file.
-- Jekyll may tolerate Liquid mistakes without failing the build, so rendered HTML must be inspected.
-- If a page suddenly starts appearing in `_site` as a copied `.md` file instead of a rendered page, check for BOM or broken front matter first.
-- Never report that something is absent because an extraction tool did not surface it, or because you only read part of a file you had already downloaded. Search the raw HTML, and search the whole downloaded file, before saying a link or a field does not exist.
-- The same applies in reverse. Do not report that a page, layout, or data file is "in use" merely because the wiring exists. Open the data, and check whether anything links to the page, before drawing a conclusion. A page can be fully wired, hold real content, and still have been deliberately retired by removing its navigation entry.
-- When explaining why something was missed, check your own coverage before attributing it to a tool limitation.
+- Never report that something is absent because an extraction tool did not surface it,
+  or because you only read part of a file you had already downloaded. Search the raw
+  source, and search the whole downloaded file, before saying a link or a field does
+  not exist.
+- The same applies in reverse. Do not report that a page, layout, or data file is "in
+  use" merely because the wiring exists. Open the data, and check whether anything
+  links to the page, before drawing a conclusion. A page can be fully wired, hold real
+  content, and still have been deliberately retired by removing its navigation entry.
+- When explaining why something was missed, check your own coverage before attributing
+  it to a tool limitation.
+- Prefer the smallest change that satisfies the request. Propose the minimal version
+  first; do not build a general mechanism for a single case.
