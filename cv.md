@@ -31,6 +31,13 @@ These applied skills have also been formally recognized in university-level AI c
 - **Seoul Cyber University**, BEng in Drone and Robot Engineering (March 2023–February 2026, Early graduation in 3 years)
 - **Korea National Open University**, BSc in Computer Science (March 1999–February 2004)
 
+## Certifications
+
+{% for cert in site.data.certifications %}
+
+- {{ cert.title_en }}, {{ cert.issuer_en }}, {{ cert.date_en }}{% if cert.note_en %} — {{ cert.note_en }}{% endif %}
+  {% endfor %}
+
 ## Extracurricular Activities
 
 - KCPSW (AI-Powered Drone Software Development Team), 2024

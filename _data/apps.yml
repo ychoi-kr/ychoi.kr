@@ -118,7 +118,7 @@
   category: web_app
   link: https://app.ychoi.kr/guitar-tuner
   tech: [Web Audio API, JavaScript, HTML5]
-  show_in_cv: true
+  show_in_cv: false
 
 - name: ko-stdict-mcp-server
   description: 표준국어대사전 검색을 위한 MCP 서버입니다.
@@ -173,7 +173,7 @@
   category: utilities
   github: https://github.com/ychoi-kr/navercafe
   tech: [Python, Pandas]
-  show_in_cv: true
+  show_in_cv: false
 
 - name: Claude HWP Converter Skill
   description: 한글 문서(HWP/HWPX)를 텍스트로 변환하는 Claude Skill
@@ -181,3 +181,4 @@
   category: ai_llm
   github: https://github.com/ychoi-kr/claude-hwp-converter-skill
   tech: [Python, Claude Skills, HWP/HWPX]
+  show_in_cv: false
