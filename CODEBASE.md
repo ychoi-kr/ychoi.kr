@@ -10,7 +10,7 @@ This repository is a Jekyll-based static site. The main source of truth is `_dat
 - `_layouts`: shared layouts
 - `_includes`: reusable fragments such as `head`, `navigation`, and SEO markup
 - `assets/css`: screen and print styles
-- `books`, `events`, `log`: section-specific page content
+- `books`, `events`: section-specific page content
 
 ## Important Data Files
 
@@ -21,6 +21,9 @@ This repository is a Jekyll-based static site. The main source of truth is `_dat
 - `_data/apps.yml`: apps and projects
 - `_data/gpts.yml`: GPT entries
 - `_data/work.yml`, `_data/lectures.yml`, `_data/personal.yml`: CV source data
+- `_data/awards.yml`, `_data/scholarships.yml`: CV awards and scholarships
+- `_data/press.yml`: media mentions rendered by `press.md`
+- `_data/navigation.yml`: site navigation, rendered by `_includes/navigation.html`. A page absent from this file is still built and reachable by URL, just unlinked.
 
 ## Page Data Flow
 
@@ -45,6 +48,17 @@ This repository is a Jekyll-based static site. The main source of truth is `_dat
 - Notes:
   - Each section uses `sort: "date" | reverse`
   - Rendered order is independent of raw YAML order
+  - Award badges render from the `awards` list on a book entry. All three sections support them.
+
+### Book detail pages
+
+- Files: `books/<slug>.md`, one per book, with `permalink: /books/<slug>/`
+- Layout: `_layouts/book.html`
+- Data source: `_data/translated_books.yml`
+- Notes:
+  - The layout finds its entry by matching `page.permalink` against the entry's `link`, then renders `<h1>` from `title`, a `.book-subtitle` line from `subtitle`, and an 원서 정보 section from `original_title` and `original_link`.
+  - The Markdown file therefore contains no heading of its own — only the body: the `홈페이지`/`발행` list, `## 소개`, and the detail image.
+  - If `permalink` and `link` do not match exactly, the page builds successfully with no title at all.
 
 ### CV
 

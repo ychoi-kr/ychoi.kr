@@ -14,9 +14,9 @@ This repository is a Jekyll-based personal site. When working here, do not look 
 
 ## Editing Method
 
-- Prefer `apply_patch` for manual file edits.
-- If `apply_patch` is not working in the current environment, use a minimal fallback that preserves UTF-8 without BOM.
-- After fallback editing, re-open the file and verify the exact edited lines.
+- Use whichever targeted edit mechanism your tooling provides, and prefer a surgical edit over rewriting a whole file.
+- Whatever the mechanism, it must preserve UTF-8 without BOM. Shell redirection and several PowerShell cmdlets do not.
+- If you had to fall back to a shell command instead of a dedicated edit tool, re-open the file afterwards and verify the exact edited lines.
 - Be especially careful with Markdown front matter. If a BOM is introduced, Jekyll may copy the file as a static asset instead of rendering it as a page.
 
 ## Repeated Task Guide
@@ -84,4 +84,5 @@ Never invent an `authors_en` value. It must come from a stated source such as th
 - Jekyll may tolerate Liquid mistakes without failing the build, so rendered HTML must be inspected.
 - If a page suddenly starts appearing in `_site` as a copied `.md` file instead of a rendered page, check for BOM or broken front matter first.
 - Never report that something is absent because an extraction tool did not surface it, or because you only read part of a file you had already downloaded. Search the raw HTML, and search the whole downloaded file, before saying a link or a field does not exist.
+- The same applies in reverse. Do not report that a page, layout, or data file is "in use" merely because the wiring exists. Open the data, and check whether anything links to the page, before drawing a conclusion. A page can be fully wired, hold real content, and still have been deliberately retired by removing its navigation entry.
 - When explaining why something was missed, check your own coverage before attributing it to a tool limitation.
