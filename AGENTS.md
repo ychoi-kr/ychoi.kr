@@ -57,18 +57,30 @@ reverses for newest-first output. `show_on_home: true` controls inclusion.
 
 Lists authored books, translations, and technical review work as three sections, each
 using `sort: "date" | reverse`. Award badges render from the `awards` list on a book
-entry; all three sections support them.
+entry; all three sections support them, and each badge links to its announcement.
 
 ### Book detail pages — `books/<slug>.md`
 
-Individual pages with `permalink: /books/<slug>/` and `layout: book`, sourced from
-`_data/translated_books.yml`.
+Individual pages with `permalink: /books/<slug>/` and `layout: book`. Only authored
+books and translations have detail pages; technical review work does not.
 
-`_layouts/book.html` finds its entry by matching `page.permalink` against the entry's
-`link`, then renders `<h1>` from `title`, a `.book-subtitle` line from `subtitle`, and
-an 원서 정보 section from `original_title` and `original_link`. The Markdown file
-therefore carries no heading of its own — only the body: the `홈페이지`/`발행` list,
-`## 소개`, and the detail image.
+`_layouts/book.html` concatenates `authored_books` and `translated_books` and finds its
+entry by matching `page.permalink` against the entry's `link` — one lookup, no fallback
+chain and nothing to declare in the page. From that entry it renders, in order:
+
+1. `<h1>` from `title`, then a `.book-subtitle` line from `subtitle`
+2. award badges from `awards`, each linking to its announcement
+3. a metadata list: contributors, publisher, publication date
+4. the page body
+5. an 원서 정보 section from `original_title` and `original_link`
+
+Contributors render as one line — `{{ authors | join: "·" }} 지음`, plus
+`, {{ translators | join: "·" }} 옮김` when `translators` is present. The publisher name
+is the link text for `publisher_link`, so no bare URL appears.
+
+**The Markdown file holds only the body**: `## 소개`, the publisher's copy, any
+`★ ... ★` lists, and the detail image. It carries no heading and no bibliographic list —
+all of that comes from the data.
 
 ### CV — `cv.md`
 
@@ -135,11 +147,16 @@ When a book is chosen for 세종도서, 대한민국학술원 우수학술도서
 - Technical review and proofreading work gets the `awards` label only. No home feed
   event.
 - If one announcement covers several books, write a single event and list them in it.
+- Each award entry is `{title, link}`, where `link` is the awarding body's own result
+  notice — KPIPA for 세종도서, nas.go.kr for 대한민국학술원 우수학술도서. Publisher or
+  bookstore pages are not the primary source. The nas.go.kr notice list is rendered by
+  JavaScript, so a specific year's post URL is easier to find by web search than by
+  fetching the list page.
 
 ### Creating a book detail page
 
-Follow the structure described under **Book detail pages** above: the title is not
-written in the Markdown.
+Follow the structure described under **Book detail pages** above. The Markdown file
+contains only the body; the heading and the bibliographic list come from the data.
 
 #### Fetching publisher content
 
@@ -169,13 +186,21 @@ written in the Markdown.
 
 ### Field ownership
 
-| Field | Consumed by |
-| --- | --- |
-| `title`, `subtitle` | book detail page heading |
-| `original_title`, `original_link` | book detail page 원서 정보 section |
-| `authors_en`, `publisher_en` | English CV only |
-| `awards` | award badges on `books.md` |
-| `link` | `books.md` and event entries; must equal the page `permalink` |
+| Field | Type | Consumed by |
+| --- | --- | --- |
+| `title`, `subtitle` | string | detail page heading |
+| `authors`, `translators` | sequence | detail page contributor line, joined with `·`; `authors` also feeds `books.md` |
+| `publisher`, `publisher_link` | string | detail page — the name is the link text |
+| `date` | date | detail page, `books.md`, CV |
+| `original_title`, `original_link` | string | detail page 원서 정보 section |
+| `awards` | sequence of `{title, link}` | badges on `books.md` and the detail page |
+| `link` | string | `books.md` and event entries; **must equal the page `permalink`** |
+| `authors_en`, `publisher_en` | string | English CV only |
+| `series`, `pages`, `dimensions`, `isbn` | string | stored only — deliberately not rendered |
+
+Write sequences in flow style: `authors: [최용, 이승우]`. `_data/reviewed_books.yml`
+still stores `authors` as a plain string; Liquid's `join` treats a non-array as a single
+element, so both forms render.
 
 Never invent an `authors_en` value. It must come from a stated source such as the
 colophon or furigana — do not back-transliterate from the Korean rendering of a
